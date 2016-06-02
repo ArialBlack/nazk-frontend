@@ -34,3 +34,10 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+bower_components/
+node_modules/
+sites/all/themes/bootstrap/
+sites/all/modules/
+
+.ftpauth
