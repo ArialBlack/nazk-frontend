@@ -1,0 +1,82 @@
+#sideblocks {
+    position: absolute;
+    right: 0;
+    top: 300px;
+    
+    @media (max-width: 767px) {
+        position: static;
+        width: 100%;
+    }
+    
+    .sblock {
+        .box-shadow();
+        background: white;
+        opacity: 0.7;
+        padding: 20px 30px;
+        margin-bottom: 10px;
+        
+        p {
+            .f("r");
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    
+    .side-button {
+        @h: 110px;
+        margin-bottom: 5px;
+        
+        a {
+            background: @nazk-blue;
+            display: block;
+            height: @h;
+            font-size: 0;
+            line-height: 0;
+            position: relative;
+            transition: all ease-in-out 0.2s;
+            right: 0;
+            
+            &:hover {
+                right: 10px; 
+            }
+            
+            i,
+            .holder { 
+                text-align: center;
+                display: inline-block;
+                height: @h;
+            }
+            
+            i {
+                background: #f8e64e;
+                color: #2c2822;
+                font-size:30px;
+                width: 70px;
+                height: @h;
+                padding: 40px 25px;
+            }
+            
+            .holder {
+                padding: 0 25px;
+                color: white;
+                font-size: 26px;
+                .f("n");
+                height: @h;
+                box-sizing: border-box;
+                line-height: 30px;
+                vertical-align: top;
+                position: relative;
+                
+                .text-copy {
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+

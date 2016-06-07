@@ -1,3 +1,33 @@
+body {
+    background: @bg;
+    font-family: 'Roboto', sans-serif;
+    .f("l");
+    color: @text;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    .f("l");
+}
+
+h1 {
+    font-style: normal;
+    
+    &.page-header {
+        font-size: 60px;
+        border: none;
+        margin-bottom: 40px;
+        margin-top: 60px;
+        padding-bottom: 0;
+    }
+}
+
+p {
+    margin-bottom: 40px;
+}
+
 img {
     max-width: 100%;
     height: auto;
