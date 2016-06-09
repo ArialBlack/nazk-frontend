@@ -106,8 +106,8 @@
                 <?php endif; ?>
               
                 <div class="social-links pull-right">
-                    <a href="#"><i class="icon ion-social-facebook"></i></a>
-                    <a href="#"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
+                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@
                 <b><?php print render($body); ?></b>
                 
                 <div class="submitted">
-                    <?php print format_date($node->created, 'custom','d.F.Y'); ?>
+                    <?php print format_date($node->created, 'custom','l, d.m.Y'); ?>
                 </div>
             </div>
         </div> 
@@ -199,6 +199,14 @@
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
           <?php print render($page['content']); ?>
+          
+          <div id="social-share">
+            <?php
+                $block = module_invoke('block', 'block_view', '3');
+                print render($block['content']);
+            ?>
+          </div>
+          
         </section>
     
         <?php if (!empty($page['sidebar_second'])): ?>

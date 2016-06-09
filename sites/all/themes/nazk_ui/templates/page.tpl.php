@@ -72,51 +72,81 @@
  *
  * @ingroup templates
  */
+ 
+ //$p = field_view_field('node', $node, 'field_main_pic', array('label'=>'hidden'));
+ //print render($p);
+
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="<?php print $container_class; ?>">
-    <div class="navbar-header">
-      <?php if ($logo): ?>
-        <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
 
-      <?php if (!empty($site_name)): ?>
-        <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-      <?php endif; ?>
+<section class="node-news-intro">
+    <div class="node-cover"></div>
+        <div class="pre-header">
+            <div class="container">
+                <?php if ($logo): ?>
+                    <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                    </a>
+                <?php endif; ?>
+        
+                <?php if (!empty($site_name)): ?>
+                    <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+                <?php endif; ?>
+              
+                <div class="social-links pull-right">
+                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
+                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <header id="navbar" role="banner" class="navbar navbar-default">
+            <div class="<?php print $container_class; ?>">
+                <div class="navbar-header">
+            
+                  <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  <?php endif; ?>
+                </div>
+            
+                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+                  <div class="navbar-collapse collapse">
+                    <nav role="navigation">
+                      <?php if (!empty($primary_nav)): ?>
+                        <?php print render($primary_nav); ?>
+                      <?php endif; ?>
+                      <?php if (!empty($secondary_nav)): ?>
+                        <?php print render($secondary_nav); ?>
+                      <?php endif; ?>
+                      <?php if (!empty($page['navigation'])): ?>
+                        <?php print render($page['navigation']); ?>
+                      <?php endif; ?>
+                    </nav>
+                  </div>
+                <?php endif; ?>
+              </div>
+        </header>
+    
+        <div class="container">
+            <div class="container-padding">
+                <?php print render($title_prefix); ?>
+                <?php if (!empty($title)): ?>
+                    <h1 class="page-header"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
+                
+                <b><?php print render($body); ?></b>
+            </div>
+        </div> 
+</section>
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <?php endif; ?>
-    </div>
-
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-        </nav>
-      </div>
-    <?php endif; ?>
-  </div>
-</header>
 
 <div class="main-container <?php print $container_class; ?>">
     <div class="container-padding">
-    
       <header role="banner" id="page-header">
         <?php if (!empty($site_slogan)): ?>
           <p class="lead"><?php print $site_slogan; ?></p>
@@ -139,11 +169,7 @@
           <?php endif; ?>
           <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
           <a id="main-content"></a>
-          <?php print render($title_prefix); ?>
-          <?php if (!empty($title)): ?>
-            <h1 class="page-header"><?php print $title; ?></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
+          
           <?php print $messages; ?>
           <?php if (!empty($tabs)): ?>
             <?php print render($tabs); ?>
@@ -155,6 +181,14 @@
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
           <?php print render($page['content']); ?>
+          
+          <div id="social-share">
+            <?php
+                $block = module_invoke('block', 'block_view', '3');
+                print render($block['content']);
+            ?>
+          </div>
+          
         </section>
     
         <?php if (!empty($page['sidebar_second'])): ?>
@@ -164,7 +198,7 @@
         <?php endif; ?>
     
       </div>
-    </div>
+  </div>
 </div>
 
 <div id="sideblocks">

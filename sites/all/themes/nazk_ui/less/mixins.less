@@ -7,6 +7,10 @@
         font-weight: 400;
     }
     
+    & when (@weight = "m") {
+        font-weight: 500;
+    }
+    
     & when (@weight = "b") {
         font-weight: 700;
     }
@@ -16,4 +20,13 @@
     -webkit-box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 1px 4px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 1px 4px 0px rgba(50, 50, 50, 0.75);
+}
+
+.line(@m: 1) {
+    content: '';
+    display: block;
+    width: 240px;
+    height: 10px;
+    background: @nazk-yellow;
+    margin: 20px * @m 0;
 }

@@ -76,15 +76,35 @@
  //$p = field_view_field('node', $node, 'field_main_pic', array('label'=>'hidden'));
  //print render($p);
  
-    $body = field_view_field('node', $node, 'body', array(
+    global $language;
+    $lang = $language->language;
+
+    $nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->fields('n', array('type'))
+    ->condition('n.type', 'newspage')
+    ->condition('n.language', $lang)
+    ->range(0, 1)
+    ->orderBy('created', 'DESC')//ORDER BY created
+    ->execute()
+    ->fetchCol(); // returns an indexed array
+            
+    $last_news_nid = $nids[0];
+    
+    if ($last_news_nid > 0) {
+        $node = node_load($last_news_nid);
+        
+        $body = field_view_field('node', $node, 'body', array(
         'label'=>'hidden',
         'type' => 'text_summary_or_trimmed', 
         'settings'=>array('trim_length' => 200),
-    ));
+        ));
     
-    if ($node->field_main_pic) {
-        $img_url = $node->field_main_pic['und'][0]['uri'];
-    } else $img_url = "";
+        if ($node->field_main_pic) {
+            $img_url = $node->field_main_pic['und'][0]['uri'];
+        } else $img_url = "";
+    }       
+
 ?>
 
 <section class="node-news-intro">
@@ -146,13 +166,18 @@
     
         <div class="container">
             <div class="container-padding">
-                <?php print render($title_prefix); ?>
-                <?php if (!empty($title)): ?>
-                    <h1 class="page-header"><?php print $title; ?></h1>
-                <?php endif; ?>
-                <?php print render($title_suffix); ?>
                 
+                <h1 class="page-header"><?php print $node->title; ?></h1>
+            
                 <b><?php print render($body); ?></b>
+                
+                <div>
+                    <span class="submitted">
+                        <?php print format_date($node->created, 'custom','l, d.m.Y'); ?>
+                    </span>
+                
+                    <a href="/node/<?php print $last_news_nid; ?>" class="btn btn-default btn-outline"><i class="icon ion-ios-paper-outline"></i> <?php print t("Read"); ?></a>
+                </div>
             </div>
         </div> 
 </section>
@@ -194,13 +219,6 @@
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
           <?php print render($page['content']); ?>
-          
-          <div id="social-share">
-            <?php
-                $block = module_invoke('block', 'block_view', '3');
-                print render($block['content']);
-            ?>
-          </div>
           
         </section>
     
