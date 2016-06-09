@@ -1,25 +1,186 @@
-.page-node {
-    @img-padding: 670px;
+.node-news-intro {
+    .logo {
+        margin-top: 35px;
+    }
     
+    .social-links {
+        margin-top: 80px;
+        
+        a {
+            font-size: 16px;
+            color: white;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: @nazk-blue;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 30px;
+            transform: scale(1,1);
+            transition: all ease-in-out 0.1s;
+            
+            &:hover {
+                transform: scale(1.2,1.2);
+                background: @nazk-yellow;
+            }
+        }
+    }
+    
+    .field-name-body {
+        .f("m");
+        font-style: italic;
+        font-size: 18px;
+        
+        &:after {
+            .line();
+        }
+    }
+    
+    .submitted {
+        .f("b");
+        font-style: normal;
+        color: black;
+    }
+    
+    .node-cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.3;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;  
+    }
+}
+
+.page-node.node-type-newspage {
     .node-news-intro {
-            position: absolute;
-            z-index: -1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: @img-padding;
+        width: 100%;
+        height: @cover-img-padding;
             
         .node-cover {
-            width: 100%;
-            height: @img-padding;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            opacity: 0.3;
+            height: @cover-img-padding;  
         }
     }
     
     .main-container {
-        margin-top: @img-padding;
+        margin-top: @gap * 2;  
+    }
+}
+
+.page-node.node-type-basicpage {
+    .node-news-intro {      
+        .node-cover {
+            background-image: url(../images/page_bg.jpg);
+            height: @page-cover-img-padding;  
+            background-position: center center;
+        }
+        
+        h1.page-title {
+            font-size: 72px;
+        }
+        
+        .field-name-body:after {
+            .line(2);
+        }
+    } 
+}
+
+.page-news {
+    .node-news-intro {
+        width: 100%;
+        height: @cover-img-padding;
+            
+        .node-cover {
+            height: @cover-img-padding;  
+        }
+    }
+    
+    .main-container {
+        margin-top: @gap * 4;  
+    }
+    
+    .submitted {
+        margin-right: 100px;
+    }
+}
+
+.page-node.node-type-teammember {
+    .field-name-field-photo {
+        float: left;
+        margin-right: 90px;
+    }
+    
+    h1 {
+        display: none;
+    }
+    
+    .topblock {
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    
+    .content {
+        clear: both;
+        margin-top: 40px;
+        
+        p {
+            margin-bottom: 0;
+        }
+    }
+    
+    .h2,
+    .field-name-field-position {
+        margin-top: 40px;
+    }
+    
+    h2 {
+        .f("n");
+        font-size: 50px;
+        text-transform: none;
+    }
+    
+    .field-name-field-position {
+        font-style: italic;
+        font-size: 30px;
+        
+        &:after {
+            .line(2);
+            margin-left: 340px;
+        }
+    }
+}
+
+.page-node-36 {
+    
+    h1,
+    #sideblocks,
+    #social-share {
+        display: none;
+    }
+    
+    .main-container.container {
+        width: 100%;
+        padding: 0;
+        
+        .container-padding {
+            &,
+            .row,
+            .col-sm-12 {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+        
+        .region-content {
+            height: 100%;
+            background-image: url(../images/team.jpg);
+            background-size: cover;
+            min-height: 800px;
+            background-position: center center;
+        }
     }
 }

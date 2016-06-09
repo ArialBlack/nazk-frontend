@@ -8976,38 +8976,614 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 /* line 1, ..\themes\nazk_ui\less\base.less */
+html {
+  height: 100%;
+}
+/* line 5, ..\themes\nazk_ui\less\base.less */
+body {
+  background: #f8f8f8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #303030;
+  font-size: 20px;
+  line-height: 28px;
+}
+/* line 14, ..\themes\nazk_ui\less\base.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+/* line 19, ..\themes\nazk_ui\less\base.less */
+h1 {
+  font-style: normal;
+}
+/* line 22, ..\themes\nazk_ui\less\base.less */
+h1.page-header {
+  font-size: 50px;
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+/* line 31, ..\themes\nazk_ui\less\base.less */
+p {
+  margin-bottom: 40px;
+}
+/* line 35, ..\themes\nazk_ui\less\base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 6, ..\themes\nazk_ui\less\base.less */
+/* line 40, ..\themes\nazk_ui\less\base.less */
+.btn {
+  padding: 10px 30px;
+  border-radius: 0;
+}
+/* line 44, ..\themes\nazk_ui\less\base.less */
+.btn i {
+  padding-right: 20px;
+}
+/* line 48, ..\themes\nazk_ui\less\base.less */
+.btn.btn-outline {
+  border: #717273 1px solid;
+  background: none;
+  color: #717273;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 55, ..\themes\nazk_ui\less\base.less */
+.btn.btn-outline:hover {
+  color: white;
+  background: #7cbce3;
+  border: #7cbce3 1px solid;
+}
+/* line 63, ..\themes\nazk_ui\less\base.less */
 .pre-header {
   height: 190px;
 }
-/* line 1, ..\themes\nazk_ui\less\navs.less */
-.navbar.container,
-.navbar.container-fluid {
-  margin-top: 0;
+@media (min-width: 768px) {
+  /* line 4, ..\themes\nazk_ui\less\grid.less */
+  .container {
+    width: 750px;
+  }
+  /* line 8, ..\themes\nazk_ui\less\grid.less */
+  .container-padding {
+    padding-right: 200px;
+  }
+  /* line 12, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks {
+    width: 200px;
+  }
+  /* line 15, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks .side-button a .holder {
+    width: 130px;
+  }
 }
-/* line 4, ..\themes\nazk_ui\less\pages.less */
-.page-node .node-news-intro {
+@media (min-width: 992px) {
+  /* line 24, ..\themes\nazk_ui\less\grid.less */
+  .container {
+    width: 970px;
+  }
+  /* line 28, ..\themes\nazk_ui\less\grid.less */
+  .container-padding {
+    padding-right: 250px;
+  }
+  /* line 32, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks {
+    width: 250px;
+  }
+  /* line 35, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks .side-button a .holder {
+    width: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 44, ..\themes\nazk_ui\less\grid.less */
+  .container {
+    width: 1170px;
+  }
+  /* line 48, ..\themes\nazk_ui\less\grid.less */
+  .container-padding {
+    padding-right: 300px;
+  }
+  /* line 52, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks {
+    width: 300px;
+  }
+  /* line 55, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks .side-button a .holder {
+    width: 230px;
+  }
+}
+/* line 1, ..\themes\nazk_ui\less\navs.less */
+#navbar {
+  margin-top: 0;
+  background: rgba(235, 195, 8, 0.75);
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 40px 0px 0px rgba(0, 0, 0, 0.03);
+}
+/* line 11, ..\themes\nazk_ui\less\navs.less */
+#navbar li a {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+/* line 16, ..\themes\nazk_ui\less\navs.less */
+#navbar li a.active {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  background: none;
+}
+/* line 1, ..\themes\nazk_ui\less\parts.less */
+#sideblocks {
+  position: absolute;
+  right: 0;
+  top: 300px;
+}
+@media (max-width: 767px) {
+  /* line 6, ..\themes\nazk_ui\less\parts.less */
+  #sideblocks {
+    position: static;
+    width: 100%;
+  }
+}
+/* line 11, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .sblock {
+  box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
+  background: white;
+  opacity: 0.7;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+  right: 0;
+}
+/* line 21, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .sblock:hover {
+  right: 10px;
+}
+/* line 25, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .sblock p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 30, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .sblock p a,
+#sideblocks .sblock p a:focus,
+#sideblocks .sblock p a:hover {
+  color: #303030;
+  text-decoration: none;
+}
+/* line 39, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button {
+  margin-bottom: 5px;
+}
+/* line 43, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a {
+  background: #7cbce3;
+  display: block;
+  height: 110px;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+  right: 0;
+}
+/* line 53, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a:hover {
+  right: 10px;
+}
+/* line 57, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a i,
+#sideblocks .side-button a .holder {
+  text-align: center;
+  display: inline-block;
+  height: 110px;
+}
+/* line 64, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a i {
+  background: #f8e64e;
+  color: #2c2822;
+  font-size: 30px;
+  width: 70px;
+  height: 110px;
+  padding: 40px 25px;
+}
+/* line 73, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a .holder {
+  padding: 0 25px;
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  height: 110px;
+  box-sizing: border-box;
+  line-height: 30px;
+  vertical-align: top;
+  position: relative;
+}
+/* line 84, ..\themes\nazk_ui\less\parts.less */
+#sideblocks .side-button a .holder .text-copy {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+}
+/* line 97, ..\themes\nazk_ui\less\parts.less */
+#social-share:before {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 10px;
+  background: #ebc308;
+  margin: 40px 0;
+}
+/* line 101, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 {
+  margin-bottom: 80px;
+}
+/* line 104, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col:first-child {
+  padding-right: 40px;
+}
+/* line 107, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col:first-child .views-field {
+  padding: 30px 80px 20px 40px;
+}
+/* line 112, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col:last-child {
+  padding-left: 40px;
+}
+/* line 115, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col:last-child .views-field {
+  padding: 30px 20px 20px 50px;
+}
+/* line 120, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col {
+  position: relative;
+}
+/* line 123, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col img {
+  width: 100%;
+  height: auto;
+}
+/* line 128, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .col .views-field-field-main-pic {
+  padding: 0 !important;
+}
+/* line 133, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing {
+  position: absolute;
+  top: 0;
+}
+/* line 137, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_title {
+  margin-bottom: 10px;
+}
+/* line 140, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_title a {
+  color: black;
+  font-size: 24px;
+}
+/* line 146, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_created {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+/* line 152, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_link a {
+  color: black;
+}
+/* line 155, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_link a span {
+  text-decoration: underline;
+}
+/* line 159, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-1 .views-field-nothing .field_link a:hover {
+  text-decoration: none;
+}
+/* line 171, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media,
+.view-team #views-bootstrap-media-1 .media {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+/* line 175, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media:after,
+.view-team #views-bootstrap-media-1 .media:after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  display: block;
+  background: #7cbce3;
+  margin-top: 50px;
+}
+/* line 185, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media:last-child:after,
+.view-team #views-bootstrap-media-1 .media:last-child:after {
+  display: none;
+}
+/* line 190, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media a,
+.view-team #views-bootstrap-media-1 .media a {
+  color: black;
+}
+/* line 194, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .pull-left,
+.view-team #views-bootstrap-media-1 .media .pull-left {
+  padding-right: 60px;
+}
+/* line 198, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .media-heading,
+.view-team #views-bootstrap-media-1 .media .media-heading {
+  font-size: 36px;
+}
+/* line 202, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .field_created,
+.view-team #views-bootstrap-media-1 .media .field_created {
+  font-size: 12px;
+  padding: 10px 0;
+}
+/* line 207, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .field_body,
+.view-team #views-bootstrap-media-1 .media .field_body {
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+/* line 213, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .field_link,
+.view-team #views-bootstrap-media-1 .media .field_link {
+  font-size: 18px;
+  text-align: right;
+}
+/* line 217, ..\themes\nazk_ui\less\parts.less */
+.view-news #views-bootstrap-media-1 .media .field_link span,
+.view-team #views-bootstrap-media-1 .media .field_link span {
+  text-decoration: underline;
+}
+/* line 225, ..\themes\nazk_ui\less\parts.less */
+.view-team #views-bootstrap-media-1 .field-position {
+  padding: 20px 0;
+}
+/* line 232, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal {
+  text-align: center;
+  padding: 0!important;
+}
+/* line 237, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+/* line 245, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+/* line 253, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal .modal-dialog .modal-content {
+  background-image: url(../images/popup.png);
+  background-size: cover;
+  min-height: 400px;
+  border-bottom: #ebc308 6px solid;
+}
+/* line 259, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+/* line 263, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal .modal-dialog .modal-content .modal-body {
+  padding: 28px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/* line 269, ..\themes\nazk_ui\less\parts.less */
+#block-block-2 .modal .modal-dialog .modal-content .modal-body p {
+  color: white;
+  line-height: normal;
+  text-align: center;
+}
+/* line 2, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .logo {
+  margin-top: 35px;
+}
+/* line 6, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .social-links {
+  margin-top: 80px;
+}
+/* line 9, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .social-links a {
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #7cbce3;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  transition: all ease-in-out 0.1s;
+}
+/* line 23, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .social-links a:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  background: #ebc308;
+}
+/* line 30, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .field-name-body {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+}
+/* line 35, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .field-name-body:after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 10px;
+  background: #ebc308;
+  margin: 20px 0;
+}
+/* line 40, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .submitted {
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+/* line 46, ..\themes\nazk_ui\less\pages.less */
+.node-news-intro .node-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
   position: absolute;
   z-index: -1;
   left: 0;
   top: 0;
   width: 100%;
-  height: 670px;
 }
-/* line 12, ..\themes\nazk_ui\less\pages.less */
-.page-node .node-news-intro .node-cover {
+/* line 60, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-newspage .node-news-intro {
   width: 100%;
   height: 670px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.3;
 }
-/* line 22, ..\themes\nazk_ui\less\pages.less */
-.page-node .main-container {
-  margin-top: 670px;
+/* line 64, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-newspage .node-news-intro .node-cover {
+  height: 670px;
+}
+/* line 69, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-newspage .main-container {
+  margin-top: 40px;
+}
+/* line 76, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-basicpage .node-news-intro .node-cover {
+  background-image: url(../images/page_bg.jpg);
+  height: 190px;
+  background-position: center center;
+}
+/* line 82, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-basicpage .node-news-intro h1.page-title {
+  font-size: 72px;
+}
+/* line 86, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-basicpage .node-news-intro .field-name-body:after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 10px;
+  background: #ebc308;
+  margin: 40px 0;
+}
+/* line 93, ..\themes\nazk_ui\less\pages.less */
+.page-news .node-news-intro {
+  width: 100%;
+  height: 670px;
+}
+/* line 97, ..\themes\nazk_ui\less\pages.less */
+.page-news .node-news-intro .node-cover {
+  height: 670px;
+}
+/* line 102, ..\themes\nazk_ui\less\pages.less */
+.page-news .main-container {
+  margin-top: 80px;
+}
+/* line 106, ..\themes\nazk_ui\less\pages.less */
+.page-news .submitted {
+  margin-right: 100px;
+}
+/* line 112, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .field-name-field-photo {
+  float: left;
+  margin-right: 90px;
+}
+/* line 117, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember h1 {
+  display: none;
+}
+/* line 121, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .topblock {
+  overflow: hidden;
+  margin-top: 80px;
+}
+/* line 126, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .content {
+  clear: both;
+  margin-top: 40px;
+}
+/* line 130, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .content p {
+  margin-bottom: 0;
+}
+/* line 135, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .h2,
+.page-node.node-type-teammember .field-name-field-position {
+  margin-top: 40px;
+}
+/* line 140, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember h2 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: none;
+}
+/* line 146, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .field-name-field-position {
+  font-style: italic;
+  font-size: 30px;
+}
+/* line 150, ..\themes\nazk_ui\less\pages.less */
+.page-node.node-type-teammember .field-name-field-position:after {
+  content: '';
+  display: block;
+  width: 240px;
+  height: 10px;
+  background: #ebc308;
+  margin: 40px 0;
+  margin-left: 340px;
+}
+/* line 159, ..\themes\nazk_ui\less\pages.less */
+.page-node-36 h1,
+.page-node-36 #sideblocks,
+.page-node-36 #social-share {
+  display: none;
+}
+/* line 165, ..\themes\nazk_ui\less\pages.less */
+.page-node-36 .main-container.container {
+  width: 100%;
+  padding: 0;
+}
+/* line 170, ..\themes\nazk_ui\less\pages.less */
+.page-node-36 .main-container.container .container-padding,
+.page-node-36 .main-container.container .container-padding .row,
+.page-node-36 .main-container.container .container-padding .col-sm-12 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* line 178, ..\themes\nazk_ui\less\pages.less */
+.page-node-36 .main-container.container .region-content {
+  height: 100%;
+  background-image: url(../images/team.jpg);
+  background-size: cover;
+  min-height: 800px;
+  background-position: center center;
 }

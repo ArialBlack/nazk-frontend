@@ -1,8 +1,65 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: @bg;
+    font-family: 'Roboto', sans-serif;
+    .f("l");
+    color: @text;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    .f("l");
+}
+
+h1 {
+    font-style: normal;
+    
+    &.page-header {
+        font-size: 50px;
+        border: none;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+}
+
+p {
+    margin-bottom: 40px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
+.btn {
+    padding: 10px 30px;
+    border-radius: 0;
+    
+    i {
+        padding-right: 20px;
+    }
+    
+    &.btn-outline {
+        border: #717273 1px solid;
+        background: none;
+        color: #717273;
+        font-size: 18px;
+        .f("l");
+        
+        &:hover {
+            color: white;
+            background: @nazk-blue;
+            border: @nazk-blue 1px solid;
+        }
+    }
+}
+
 .pre-header {
-    height: 190px;
+    height: @pre-header-height;
 }

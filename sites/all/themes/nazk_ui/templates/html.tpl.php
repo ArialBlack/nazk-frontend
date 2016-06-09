@@ -62,6 +62,7 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <link type="text/css" rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,900italic,900,700italic,700,500italic,500,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
  
   <!-- HTML5 element support for IE6-8 -->
