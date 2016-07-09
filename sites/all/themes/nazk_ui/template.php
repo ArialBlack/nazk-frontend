@@ -22,3 +22,10 @@ function nazk_ui_preprocess_page(&$vars) {
         $vars['logo'] = '/sites/default/files/NAZK_logo.png';
     }
 }
+
+function nazk_ui_preprocess_node(&$vars) {
+  if (variable_get('node_submitted_' . $vars['node']->type, TRUE)) {
+    $date = format_date($vars['node']->created, 'date_type');
+    $vars['submitted'] = t('Submitted by !username on !datetime', array('!username' => $vars['name'], '!datetime' => $date));
+  }
+}

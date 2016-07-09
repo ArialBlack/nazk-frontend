@@ -28,6 +28,10 @@ h1 {
     }
 }
 
+a {
+    color: @nazk-blue;
+}
+
 p {
     margin-bottom: 40px;
 }
@@ -62,4 +66,89 @@ img {
 
 .pre-header {
     height: @pre-header-height;
+    
+    > .container {
+        text-align: center;
+    }
+    
+    .gerb {
+        margin-top: 35px;
+    }
+}
+
+.translation_en,
+.translation_uk {
+    display: none !important;
+}
+
+.field-name-field-files {
+    margin-top: 40px;
+    
+    a {
+        font-size: 16px;
+        color: black;
+        
+        &:after {
+            content: '\f407';
+            .ionic();
+            margin-left: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+.node form {
+    margin-top: 80px;
+}
+
+.webform-client-form {
+    .form-item {
+        &.form-group {
+            margin-bottom: 80px;
+        }
+        
+        &.form-type-radio {
+            label {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.webform-component-file {
+    .description {
+        font-size: 14px;
+        mardin-top: 10px;
+    }
+}
+
+.form-control.form-file {
+    margin-bottom: 20px;
+}
+
+.panel-body > .form-item.form-group {
+    margin-bottom: 40px;
+}
+
+.view {
+    .more-link {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+        a {
+            text-transform: uppercase;
+            color: @nazk-blue;
+            padding: 15px 25px;
+            border: @nazk-blue 1px solid;
+            font-size: 16px;
+            font-weight: bold;
+            
+            &:hover {
+                background: @nazk-blue;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -91,7 +91,7 @@
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted">
+    <div class="submitted by">
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>

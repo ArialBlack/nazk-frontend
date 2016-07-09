@@ -21,7 +21,7 @@ module.exports = function(grunt) {
            your_target: {
                 options: {
 		            authKey: "serverA",
-    	           host: "andrey02.ftp.ukraine.com.ua",
+    	           host: "nazk.ftp.ukraine.com.ua",
     	           dest: "/",
     	           port: 21
               },
@@ -33,6 +33,14 @@ module.exports = function(grunt) {
                        "**"
                         ],
                         dest: '/sites/all/themes/nazk_ui'
+                    },
+                    {
+                       expand: true,
+                       cwd: '../modules',
+                        src: [
+                       "**"
+                        ],
+                        dest: '/sites/all/modules'
                     }
                ]
             }
@@ -53,6 +61,7 @@ module.exports = function(grunt) {
             ftppush: {
                 files: [
                     '../themes/nazk_ui/**/*.*',
+                    '/sites/all/modules/**/*.*',
                     '!../themes/nazk_ui/**/*.less'
                 ],
                 tasks: ['ftp_push']

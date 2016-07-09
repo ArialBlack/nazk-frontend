@@ -5,7 +5,7 @@
         width: 750px;
     }
   
-    .container-padding {
+    .container-padding1 {
         padding-right: @w;
     }
   
@@ -25,7 +25,7 @@
         width: 970px;
     }
     
-    .container-padding {
+    .container-padding1 {
         padding-right: @w;
     }
   
@@ -45,7 +45,7 @@
         width: 1170px;
     }
   
-    .container-padding {
+    .container-padding1 {
         padding-right: @w;
     }
   
@@ -56,4 +56,14 @@
             width: @w - @iw;
         }
     }
+}
+
+.col(@n) {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    
+    width: 100% / 12 * @n;
 }
