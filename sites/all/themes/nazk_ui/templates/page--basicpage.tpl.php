@@ -100,14 +100,32 @@
                       <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
                     </a>
                 <?php endif; ?>
-        
+                        
                 <?php if (!empty($site_name)): ?>
                     <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
                 <?php endif; ?>
-              
+                
+                <div class="lang-switch">
+                    <span class="ofsite"><?php print t("Official website"); ?></span>
+                    <?php
+                        $block = module_invoke('locale', 'block_view', 'language');
+                        print render($block['content']);
+                    ?>
+                </div>
+                
+                <div class="search-block">
+                    <?php
+                        $block = module_invoke('views', 'block_view', '-exp-search-page');
+                        print render($block['content']);
+                    ?>
+                </div>
+                              
                 <div class="social-links pull-right">
                     <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
                     <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i></a>
+                    <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i></a>
                 </div>
             </div>
         </div>
@@ -144,15 +162,31 @@
               </div>
         </header>
     
-        <div class="container">
+        <div class="container first-one">
             <div class="container-padding">
-                <?php print render($title_prefix); ?>
-                <?php if (!empty($title)): ?>
-                    <h1 class="page-header"><?php print $title; ?></h1>
-                <?php endif; ?>
-                <?php print render($title_suffix); ?>
+                <?php if ($is_front) :?>
                 
-                <b><?php print render($body); ?></b>
+                    <div id="frontquoute">
+                        <b class="page-teaser"><?php print render($body); ?></b>
+                    </div>
+                    
+                    <div id="sideblocks">
+                    <?php
+                        $block = module_invoke('block', 'block_view', '1');
+                        print render($block['content']);
+                    ?>
+                    </div>
+                <?php endif; ?>
+                
+                <?php if (!$is_front) :?>
+                    <?php print render($title_prefix); ?>
+                    <?php if (!empty($title)): ?>
+                        <h1 class="page-header"><?php print $title; ?></h1>
+                    <?php endif; ?>
+                    <?php print render($title_suffix); ?>
+                    
+                    <b class="page-teaser"><?php print render($body); ?></b>
+                <?php endif; ?>
             </div>
         </div> 
 </section>
@@ -195,12 +229,14 @@
           <?php endif; ?>
           <?php print render($page['content']); ?>
           
+          <?php if (!$is_front) :?>
           <div id="social-share">
             <?php
                 $block = module_invoke('block', 'block_view', '3');
                 print render($block['content']);
             ?>
           </div>
+          <?php endif; ?>
           
         </section>
     
@@ -214,15 +250,27 @@
   </div>
 </div>
 
+<div class="content_bottom_wrap">
+    <?php if (!empty($page['content_bottom'])): ?>
+      <div class="container">
+        <?php print render($page['content_bottom']); ?>
+      </div>
+    <?php endif; ?>
+</div>
+
+<?php if (!$is_front) :?>
 <div id="sideblocks">
     <?php
         $block = module_invoke('block', 'block_view', '1');
         print render($block['content']);
     ?>
 </div>
-
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
-  </footer>
 <?php endif; ?>
+
+<div class="footer_wrap">
+    <?php if (!empty($page['footer'])): ?>
+      <footer class="footer <?php print $container_class; ?>">
+        <?php print render($page['footer']); ?>
+      </footer>
+    <?php endif; ?>
+</div>

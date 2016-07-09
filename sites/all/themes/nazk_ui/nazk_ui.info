@@ -14,6 +14,7 @@ regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[precontent]        = 'PreContent'
 regions[content]        = 'Content'
+regions[content_bottom] = 'Content bottom'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
@@ -46,6 +47,9 @@ stylesheets[all][] = css/style.css
 ;scripts[] = '../bootstrap/js/transition.js'
 
 scripts[] = 'js/bootstrap.min.js'
+scripts[] = 'js/tooltip.js'
+scripts[] = 'js/popover.js'
+;scripts[] = 'js/jquery.waypoints.min.js'
 scripts[] = 'js/main.js'
 
 
