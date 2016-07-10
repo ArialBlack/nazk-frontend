@@ -75,12 +75,13 @@
             $('body').popover({ selector: '[data-popover]', trigger: 'click hover', placement: 'auto', delay: {show: 50, hide: 400}});
         }
         
-        
         $( document ).ready(function() {
-            setCPpadding ();
+            if ($('.navbar-toggle:visible').length == 0) {
+                setCPpadding ();
+            }
+            
             setFrontHeight ();
             activatePopover();
-           
             
             $(".html-popover").popover({
                 html: true, 
@@ -92,12 +93,13 @@
             $(".i18n-uk #edit-search-api-views-fulltext").attr("placeholder", "Пошук...");
             //$("#block-views-exp-search-page .form-item-created-date input, #block-views-exp-search-page .form-item-created-1-date input").attr("placeholder", "03.07.2016");
         });
-        
-        
+
         $(window).on('resize', function(e) {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
-                setCPpadding ();
+                if ($('.navbar-toggle:visible').length == 0) {
+                    setCPpadding ();
+                }
                 setFrontHeight ();    
             }, 250);
         });
