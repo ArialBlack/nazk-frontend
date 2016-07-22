@@ -12,7 +12,8 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'comments'
                 },
                 files: {
-                    '../themes/nazk_ui/css/style.css': '../themes/nazk_ui/less/style.less'
+                    '../themes/nazk_ui/css/style.css': '../themes/nazk_ui/less/style.less',
+                    '../themes/nazk_uicontrast/css/style.css': '../themes/nazk_uicontrast/less/style.less'
                 }
             }
         },
@@ -36,6 +37,14 @@ module.exports = function(grunt) {
                     },
                     {
                        expand: true,
+                       cwd: '../themes/nazk_uicontrast',
+                        src: [
+                       "**"
+                        ],
+                        dest: '/sites/all/themes/nazk_uicontrast'
+                    },
+                    {
+                       expand: true,
                        cwd: '../modules',
                         src: [
                        "**"
@@ -53,7 +62,8 @@ module.exports = function(grunt) {
 
             less: {
                 files: [
-                    '../themes/nazk_ui/less/**/*.less'
+                    '../themes/nazk_ui/less/**/*.less',
+                    '../themes/nazk_uicontrast/less/**/*.less'
                 ],
                 tasks: ['less', 'postcss']
             },
@@ -61,8 +71,10 @@ module.exports = function(grunt) {
             ftppush: {
                 files: [
                     '../themes/nazk_ui/**/*.*',
+                    '../themes/nazk_uicontrast/**/*.*',
                     '/sites/all/modules/**/*.*',
-                    '!../themes/nazk_ui/**/*.less'
+                    '!../themes/nazk_ui/**/*.less',
+                    '!../themes/nazk_uicontrast/**/*.less'
                 ],
                 tasks: ['ftp_push']
             },
@@ -75,7 +87,8 @@ module.exports = function(grunt) {
               ]
             },
             dist: {
-              src: '../themes/nazk_ui/css/style.css'
+              src: '../themes/nazk_ui/css/style.css',
+              src: '../themes/nazk_uicontrast/css/style.css'
             }
         }, 
     });

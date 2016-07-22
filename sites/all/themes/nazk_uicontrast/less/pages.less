@@ -93,17 +93,24 @@
     }
     
     .node-cover {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        opacity: 0.3;
+        opacity: 1;
         position: absolute;
         z-index: -1;
         left: 0;
         top: 0;
-        width: 100%;  
+        width: 100%;
     }
 }
+
+.node-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &.contrast {
+        min-height: 300px;
+    }
+ }
 
 .page-node.node-type-newspage {
     .node-news-intro {
@@ -123,10 +130,6 @@
 .page-node.node-type-basicpage {
     .node-news-intro {      
         .node-cover {
-            background-image: url(../images/page_bg.jpg);
-            height: @page-cover-img-padding;  
-            background-position: center center;
-            background-size: cover;
         }
         
         h1.page-title {
@@ -140,9 +143,6 @@
     
     &.front {
         .node-news-intro .node-cover {
-            background-image: url(../images/front.jpg);
-            background-position: center center;
-            background-size: cover;
         }
     }
 }

@@ -1,0 +1,6 @@
+@import 'http://nazk.gov.ua/sites/all/themes/nazk_ui/css/style.css';
+/* line 1, ..\themes\nazk_uicontrast\less\contrast.less */
+#sideblocks .side-button a {
+  background: black;
+  opacity: 1;
+}
