@@ -1,6 +1,10 @@
 .node-news-intro {
     .logo {
         margin-top: 35px;
+        
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
     }
     
     .social-links {
@@ -10,7 +14,7 @@
         text-align: left;
         margin-bottom: 20px;
         
-        @media (min-width: 768px) {
+        @media (min-width: @mbp) {
             clear: right;
             float: right !important;
             margin-bottom: 0;
@@ -47,13 +51,17 @@
             line-height: 32px;
         }
         
-        @media (min-width: 768px) {
+        @media (min-width: @mbp) {
             float: right;
             clear: right;
             margin-top: 30px;
             
             .ofsite {
                 float: left;
+                
+                img {
+                    margin-right: 10px;
+                }
             }
             
             ul {
@@ -93,9 +101,6 @@
     }
     
     .node-cover {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
         opacity: 0.3;
         position: absolute;
         z-index: -1;
@@ -105,10 +110,19 @@
     }
 }
 
+.node-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .page-node.node-type-newspage {
     .node-news-intro {
         width: 100%;
-        height: @cover-img-padding;
+        
+        @media (min-width: 1200px) {
+            height: @cover-img-padding;
+        }
             
         .node-cover {
             height: @cover-img-padding;  
@@ -150,7 +164,10 @@
 .page-news {
     .node-news-intro {
         width: 100%;
-        height: @cover-img-padding;
+        
+        @media (min-width: 992px) {
+            height: @cover-img-padding;
+        }
             
         .node-cover {
             height: @cover-img-padding;  
@@ -250,15 +267,19 @@
     }
 
     .node-news-intro .node-cover {
-opacity: 1;
+        opacity: 1;
     }
     
     #frontquoute {
         background: @nazk-yellow;
-        width: 300px;
-        position: absolute;
-        left: 0;
-        margin-top: -100px;
+        width: 100%;
+        
+        @media (min-width: 1200px) {
+            position: absolute;
+            left: 0;
+            margin-top: -100px;
+            width: 300px;
+        }
         
         .field-name-body {
             padding: 60px 40px;
@@ -313,15 +334,20 @@ opacity: 1;
         display: table;
         margin-top: 80px;
         
-        .sblock-group,
-        .side-buttons-group {
-            display: table-cell;
-            width: 50%;
-            vertical-align: middle;
+        @media (min-width: 1200px) {
+            .sblock-group,
+            .side-buttons-group {
+                display: table-cell;
+                width: 50%;
+                vertical-align: middle;
+            }
         }
         
         .sblock-group {
-            padding-right: 80px;
+            @media (min-width: 1200px) {
+                padding-right: 80px;
+            }
+            
             .sblock {
                 margin-top: 20px;
                 margin-bottom: 20px; 
@@ -329,7 +355,10 @@ opacity: 1;
         }
         
         .side-buttons-group {
-            padding-left: 80px;
+            @media (min-width: 1200px) {
+                padding-left: 80px;
+            }
+            
             .side-button {
                 margin-top: 20px;
                 margin-bottom: 20px; 

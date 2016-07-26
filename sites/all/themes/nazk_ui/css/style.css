@@ -9167,18 +9167,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   height: 1px;
   width: 1px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   /* line 7, ..\themes\nazk_ui\less\base.less */
   #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
-/* line 13, ..\themes\nazk_ui\less\base.less */
+@media (min-width: 992px) {
+  /* line 15, ..\themes\nazk_ui\less\base.less */
+  .not-front #bpMArker {
+    display: none;
+    visibility: hidden;
+  }
+}
+/* line 23, ..\themes\nazk_ui\less\base.less */
 html {
   height: 100%;
 }
-/* line 17, ..\themes\nazk_ui\less\base.less */
+/* line 27, ..\themes\nazk_ui\less\base.less */
 body {
   background: #f8f8f8;
   font-family: 'Roboto', sans-serif;
@@ -9187,7 +9194,7 @@ body {
   font-size: 20px;
   line-height: 28px;
 }
-/* line 26, ..\themes\nazk_ui\less\base.less */
+/* line 36, ..\themes\nazk_ui\less\base.less */
 h1,
 h2,
 h3,
@@ -9197,11 +9204,11 @@ h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-/* line 31, ..\themes\nazk_ui\less\base.less */
+/* line 41, ..\themes\nazk_ui\less\base.less */
 h1 {
   font-style: normal;
 }
-/* line 34, ..\themes\nazk_ui\less\base.less */
+/* line 44, ..\themes\nazk_ui\less\base.less */
 h1.page-header {
   font-size: 50px;
   border: none;
@@ -9209,29 +9216,29 @@ h1.page-header {
   margin-top: 30px;
   padding-bottom: 0;
 }
-/* line 43, ..\themes\nazk_ui\less\base.less */
+/* line 53, ..\themes\nazk_ui\less\base.less */
 a {
   color: #7cbce3;
 }
-/* line 47, ..\themes\nazk_ui\less\base.less */
+/* line 57, ..\themes\nazk_ui\less\base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 51, ..\themes\nazk_ui\less\base.less */
+/* line 61, ..\themes\nazk_ui\less\base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 56, ..\themes\nazk_ui\less\base.less */
+/* line 66, ..\themes\nazk_ui\less\base.less */
 .btn {
   padding: 10px 30px;
   border-radius: 0;
 }
-/* line 60, ..\themes\nazk_ui\less\base.less */
+/* line 70, ..\themes\nazk_ui\less\base.less */
 .btn i {
   padding-right: 20px;
 }
-/* line 64, ..\themes\nazk_ui\less\base.less */
+/* line 74, ..\themes\nazk_ui\less\base.less */
 .btn.btn-outline {
   border: #717273 1px solid;
   background: none;
@@ -9239,22 +9246,22 @@ img {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 71, ..\themes\nazk_ui\less\base.less */
+/* line 81, ..\themes\nazk_ui\less\base.less */
 .btn.btn-outline:hover {
   color: white;
   background: #7cbce3;
   border: #7cbce3 1px solid;
 }
-/* line 79, ..\themes\nazk_ui\less\base.less */
+/* line 89, ..\themes\nazk_ui\less\base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 84, ..\themes\nazk_ui\less\base.less */
+/* line 94, ..\themes\nazk_ui\less\base.less */
 .field-name-field-files {
   margin-top: 40px;
 }
-/* line 87, ..\themes\nazk_ui\less\base.less */
+/* line 97, ..\themes\nazk_ui\less\base.less */
 .field-name-field-files a {
   font-size: 16px;
   color: black;
@@ -9265,38 +9272,38 @@ img {
             font-size: 18px;
         }*/
 }
-/* line 100, ..\themes\nazk_ui\less\base.less */
+/* line 110, ..\themes\nazk_ui\less\base.less */
 .node form {
   margin-top: 80px;
 }
-/* line 106, ..\themes\nazk_ui\less\base.less */
+/* line 116, ..\themes\nazk_ui\less\base.less */
 .webform-client-form .form-item.form-group {
   margin-bottom: 80px;
 }
-/* line 111, ..\themes\nazk_ui\less\base.less */
+/* line 121, ..\themes\nazk_ui\less\base.less */
 .webform-client-form .form-item.form-type-radio label {
   font-weight: 300;
 }
-/* line 119, ..\themes\nazk_ui\less\base.less */
+/* line 129, ..\themes\nazk_ui\less\base.less */
 .webform-component-file .description {
   font-size: 14px;
   mardin-top: 10px;
 }
-/* line 125, ..\themes\nazk_ui\less\base.less */
+/* line 135, ..\themes\nazk_ui\less\base.less */
 .form-control.form-file {
   margin-bottom: 20px;
 }
-/* line 129, ..\themes\nazk_ui\less\base.less */
+/* line 139, ..\themes\nazk_ui\less\base.less */
 .panel-body > .form-item.form-group {
   margin-bottom: 40px;
 }
-/* line 134, ..\themes\nazk_ui\less\base.less */
+/* line 144, ..\themes\nazk_ui\less\base.less */
 .view .more-link {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-/* line 139, ..\themes\nazk_ui\less\base.less */
+/* line 149, ..\themes\nazk_ui\less\base.less */
 .view .more-link a {
   text-transform: uppercase;
   color: #7cbce3;
@@ -9305,67 +9312,67 @@ img {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 147, ..\themes\nazk_ui\less\base.less */
+/* line 157, ..\themes\nazk_ui\less\base.less */
 .view .more-link a:hover {
   background: #7cbce3;
   color: white;
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  /* line 4, ..\themes\nazk_ui\less\grid.less */
+  /* line 6, ..\themes\nazk_ui\less\grid.less */
   .container {
     width: 750px;
   }
-  /* line 8, ..\themes\nazk_ui\less\grid.less */
-  .container-padding1 {
-    padding-right: 200px;
-  }
-  /* line 12, ..\themes\nazk_ui\less\grid.less */
-  #sideblocks {
-    width: 200px;
-  }
-  /* line 15, ..\themes\nazk_ui\less\grid.less */
-  #sideblocks .side-button a .holder {
-    width: 130px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 24, ..\themes\nazk_ui\less\grid.less */
-  .container {
-    width: 970px;
-  }
-  /* line 28, ..\themes\nazk_ui\less\grid.less */
-  .container-padding1 {
-    padding-right: 250px;
-  }
-  /* line 32, ..\themes\nazk_ui\less\grid.less */
-  #sideblocks {
-    width: 250px;
-  }
-  /* line 35, ..\themes\nazk_ui\less\grid.less */
-  #sideblocks .side-button a .holder {
-    width: 180px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 44, ..\themes\nazk_ui\less\grid.less */
-  .container {
-    width: 1170px;
-  }
-  /* line 48, ..\themes\nazk_ui\less\grid.less */
+  /* line 10, ..\themes\nazk_ui\less\grid.less */
   .container-padding1 {
     padding-right: 300px;
   }
-  /* line 52, ..\themes\nazk_ui\less\grid.less */
+  /* line 14, ..\themes\nazk_ui\less\grid.less */
   #sideblocks {
     width: 300px;
   }
-  /* line 55, ..\themes\nazk_ui\less\grid.less */
+  /* line 17, ..\themes\nazk_ui\less\grid.less */
   #sideblocks .side-button a .holder {
     width: 230px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  /* line 26, ..\themes\nazk_ui\less\grid.less */
+  .container {
+    width: 970px;
+  }
+  /* line 30, ..\themes\nazk_ui\less\grid.less */
+  .container-padding1 {
+    padding-right: 300px;
+  }
+  /* line 34, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks {
+    width: 300px;
+  }
+  /* line 37, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks .side-button a .holder {
+    width: 230px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 46, ..\themes\nazk_ui\less\grid.less */
+  .container {
+    width: 1170px;
+  }
+  /* line 50, ..\themes\nazk_ui\less\grid.less */
+  .container-padding1 {
+    padding-right: 300px;
+  }
+  /* line 54, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks {
+    width: 300px;
+  }
+  /* line 57, ..\themes\nazk_ui\less\grid.less */
+  #sideblocks .side-button a .holder {
+    width: 230px;
+  }
+}
+@media (min-width: 992px) {
   /* line 2, ..\themes\nazk_ui\less\navs.less */
   .pre-header {
     height: 190px;
@@ -9379,7 +9386,13 @@ img {
 .pre-header .gerb {
   margin-top: 35px;
 }
-/* line 15, ..\themes\nazk_ui\less\navs.less */
+@media (max-width: 991px) {
+  /* line 15, ..\themes\nazk_ui\less\navs.less */
+  .pre-header .search-block {
+    clear: both;
+  }
+}
+/* line 21, ..\themes\nazk_ui\less\navs.less */
 #navbar {
   margin-top: 0;
   background: rgba(235, 195, 8, 0.85);
@@ -9389,16 +9402,16 @@ img {
   -moz-box-shadow: 0px 40px 0px 0px rgba(0, 0, 0, 0.03);
   box-shadow: 0px 40px 0px 0px rgba(0, 0, 0, 0.03);
 }
-/* line 26, ..\themes\nazk_ui\less\navs.less */
+/* line 32, ..\themes\nazk_ui\less\navs.less */
 #navbar .dropdown-menu li a {
   padding: 10px 20px;
   font-size: 12px;
 }
-/* line 33, ..\themes\nazk_ui\less\navs.less */
+/* line 39, ..\themes\nazk_ui\less\navs.less */
 #navbar .dropdown-submenu > .dropdown-menu {
   background: rgba(235, 195, 8, 0.85);
 }
-/* line 38, ..\themes\nazk_ui\less\navs.less */
+/* line 44, ..\themes\nazk_ui\less\navs.less */
 #navbar li a {
   font-weight: 400;
   font-size: 14px;
@@ -9406,21 +9419,21 @@ img {
   padding: 15px;
   border: none;
 }
-/* line 45, ..\themes\nazk_ui\less\navs.less */
+/* line 51, ..\themes\nazk_ui\less\navs.less */
 #navbar li a.active {
   font-weight: 700;
   color: black;
   text-decoration: none;
   background: none;
 }
-/* line 54, ..\themes\nazk_ui\less\navs.less */
+/* line 60, ..\themes\nazk_ui\less\navs.less */
 #navbar .navbar-nav > .open > a,
 #navbar .navbar-nav > .open > a:hover,
 #navbar .navbar-nav > .open > a:focus {
   background: #7cbce3;
   color: white;
 }
-/* line 60, ..\themes\nazk_ui\less\navs.less */
+/* line 66, ..\themes\nazk_ui\less\navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu {
@@ -9428,22 +9441,49 @@ img {
   border: none;
   border-radius: 0px;
 }
-/* line 65, ..\themes\nazk_ui\less\navs.less */
+/* line 71, ..\themes\nazk_ui\less\navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu a,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu a,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu a {
   color: black;
   padding: 10px 20px;
 }
-/* line 69, ..\themes\nazk_ui\less\navs.less */
+/* line 75, ..\themes\nazk_ui\less\navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu a:hover,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu a:hover,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu a:hover {
   background: #ebc308;
 }
-/* line 77, ..\themes\nazk_ui\less\navs.less */
+/* line 82, ..\themes\nazk_ui\less\navs.less */
+#navbar .navbar-toggle {
+  border: white;
+}
+/* line 85, ..\themes\nazk_ui\less\navs.less */
+#navbar .navbar-toggle .icon-bar {
+  background: white;
+}
+/* line 89, ..\themes\nazk_ui\less\navs.less */
+#navbar .navbar-toggle:hover {
+  background: #7cbce3;
+}
+/* line 95, ..\themes\nazk_ui\less\navs.less */
 #navbar .menu.navbar-nav .last.dropdown .dropdown-menu a {
   white-space: normal;
+}
+/* line 100, ..\themes\nazk_ui\less\navs.less */
+#navbar .language-switcher-locale-url {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 104, ..\themes\nazk_ui\less\navs.less */
+#navbar .language-switcher-locale-url li {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 15px;
+}
+/* line 110, ..\themes\nazk_ui\less\navs.less */
+#navbar .language-switcher-locale-url a {
+  padding: 0;
 }
 /* line 1, ..\themes\nazk_ui\less\parts.less */
 #sideblocks {
@@ -9564,81 +9604,89 @@ img {
 #block-views-news-block-1 .col:first-child,
 #block-views-news-block-3 .col:first-child {
   padding-right: 40px;
+  margin-bottom: 40px;
 }
-/* line 111, ..\themes\nazk_ui\less\parts.less */
+/* line 112, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col:last-child,
 #block-views-news-block-3 .col:last-child {
   padding-left: 40px;
 }
-/* line 115, ..\themes\nazk_ui\less\parts.less */
+/* line 116, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col,
 #block-views-news-block-3 .col {
   position: relative;
 }
-/* line 118, ..\themes\nazk_ui\less\parts.less */
+/* line 119, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col img,
 #block-views-news-block-3 .col img {
   width: 100%;
   height: auto;
 }
-/* line 124, ..\themes\nazk_ui\less\parts.less */
+/* line 125, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing,
 #block-views-news-block-3 .views-field-nothing {
   padding: 30px 0 0 0;
 }
-/* line 127, ..\themes\nazk_ui\less\parts.less */
+/* line 128, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title,
 #block-views-news-block-3 .views-field-nothing .field_title {
   margin-bottom: 10px;
 }
-/* line 130, ..\themes\nazk_ui\less\parts.less */
+/* line 131, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title a,
 #block-views-news-block-3 .views-field-nothing .field_title a {
   color: black;
   font-size: 24px;
 }
-/* line 136, ..\themes\nazk_ui\less\parts.less */
+/* line 137, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_created,
 #block-views-news-block-3 .views-field-nothing .field_created {
   font-size: 12px;
   margin-bottom: 10px;
 }
-/* line 142, ..\themes\nazk_ui\less\parts.less */
+/* line 143, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a,
 #block-views-news-block-3 .views-field-nothing .field_link a {
   color: black;
 }
-/* line 145, ..\themes\nazk_ui\less\parts.less */
+/* line 146, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a span,
 #block-views-news-block-3 .views-field-nothing .field_link a span {
   text-decoration: underline;
 }
-/* line 149, ..\themes\nazk_ui\less\parts.less */
+/* line 150, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a:hover,
 #block-views-news-block-3 .views-field-nothing .field_link a:hover {
   text-decoration: none;
 }
-/* line 157, ..\themes\nazk_ui\less\parts.less */
-.front #block-views-news-block-3 {
-  margin-top: -68px;
+@media (min-width: 1200px) {
+  /* line 159, ..\themes\nazk_ui\less\parts.less */
+  .front #block-views-news-block-3 {
+    margin-top: -68px;
+  }
 }
-/* line 160, ..\themes\nazk_ui\less\parts.less */
+/* line 163, ..\themes\nazk_ui\less\parts.less */
 .front #block-views-news-block-3 h2 {
   margin: 0 auto;
   text-align: center;
-  display: block;
-  background: url(../images/folder.png) no-repeat center center;
-  width: 468px;
-  padding: 20px 50px;
-  margin-bottom: 80px;
 }
-/* line 175, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 1200px) {
+  /* line 167, ..\themes\nazk_ui\less\parts.less */
+  .front #block-views-news-block-3 h2 {
+    display: block;
+    background: url(../images/folder.png) no-repeat center center;
+    width: 468px;
+    padding: 20px 50px;
+    margin-bottom: 80px;
+  }
+}
+/* line 181, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media,
 .view-team #views-bootstrap-media-1 .media {
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
-/* line 179, ..\themes\nazk_ui\less\parts.less */
+/* line 185, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media:after,
 .view-team #views-bootstrap-media-1 .media:after {
   content: '';
@@ -9648,61 +9696,61 @@ img {
   background: #7cbce3;
   margin-top: 50px;
 }
-/* line 189, ..\themes\nazk_ui\less\parts.less */
+/* line 195, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media:last-child:after,
 .view-team #views-bootstrap-media-1 .media:last-child:after {
   display: none;
 }
-/* line 194, ..\themes\nazk_ui\less\parts.less */
+/* line 200, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media a,
 .view-team #views-bootstrap-media-1 .media a {
   color: black;
 }
-/* line 198, ..\themes\nazk_ui\less\parts.less */
+/* line 204, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .pull-left,
 .view-team #views-bootstrap-media-1 .media .pull-left {
   padding-right: 60px;
   max-width: 400px;
 }
-/* line 203, ..\themes\nazk_ui\less\parts.less */
+/* line 209, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .media-heading,
 .view-team #views-bootstrap-media-1 .media .media-heading {
   font-size: 36px;
 }
-/* line 207, ..\themes\nazk_ui\less\parts.less */
+/* line 213, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_created,
 .view-team #views-bootstrap-media-1 .media .field_created {
   font-size: 12px;
   padding: 10px 0;
 }
-/* line 212, ..\themes\nazk_ui\less\parts.less */
+/* line 218, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_body,
 .view-team #views-bootstrap-media-1 .media .field_body {
   font-size: 16px;
   line-height: normal;
   margin-bottom: 20px;
 }
-/* line 218, ..\themes\nazk_ui\less\parts.less */
+/* line 224, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link,
 .view-team #views-bootstrap-media-1 .media .field_link {
   font-size: 18px;
   text-align: right;
 }
-/* line 222, ..\themes\nazk_ui\less\parts.less */
+/* line 228, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link span,
 .view-team #views-bootstrap-media-1 .media .field_link span {
   text-decoration: underline;
 }
-/* line 230, ..\themes\nazk_ui\less\parts.less */
+/* line 236, ..\themes\nazk_ui\less\parts.less */
 .view-team #views-bootstrap-media-1 .field-position {
   padding: 20px 0;
 }
-/* line 237, ..\themes\nazk_ui\less\parts.less */
+/* line 243, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal {
   text-align: center;
   padding: 0!important;
 }
-/* line 242, ..\themes\nazk_ui\less\parts.less */
+/* line 248, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal:before {
   content: '';
   display: inline-block;
@@ -9710,24 +9758,24 @@ img {
   vertical-align: middle;
   margin-right: -4px;
 }
-/* line 250, ..\themes\nazk_ui\less\parts.less */
+/* line 256, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal-dialog {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
 }
-/* line 258, ..\themes\nazk_ui\less\parts.less */
+/* line 264, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content {
   background-image: url(../images/popup.png);
   background-size: cover;
   min-height: 400px;
   border-bottom: #ebc308 6px solid;
 }
-/* line 264, ..\themes\nazk_ui\less\parts.less */
+/* line 270, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-header {
   border: none;
 }
-/* line 268, ..\themes\nazk_ui\less\parts.less */
+/* line 274, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body {
   padding: 28px;
   position: absolute;
@@ -9736,56 +9784,60 @@ img {
   width: 100%;
   transform: translateY(-50%);
 }
-/* line 276, ..\themes\nazk_ui\less\parts.less */
+/* line 282, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body p {
   color: white;
   line-height: normal;
   text-align: center;
 }
-/* line 288, ..\themes\nazk_ui\less\parts.less */
+/* line 294, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .views-field-title {
   padding: 20px 0 10px;
 }
-/* line 291, ..\themes\nazk_ui\less\parts.less */
+/* line 297, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .views-field-title a {
   color: black;
 }
-/* line 296, ..\themes\nazk_ui\less\parts.less */
+/* line 302, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_created {
   font-size: 12px;
   margin-bottom: 10px;
 }
-/* line 301, ..\themes\nazk_ui\less\parts.less */
+/* line 307, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_body {
   font-size: 17px;
   line-height: normal;
 }
-/* line 307, ..\themes\nazk_ui\less\parts.less */
+/* line 311, ..\themes\nazk_ui\less\parts.less */
+#block-views-news-block-4 .field_body .rtejustify {
+  text-align: left;
+}
+/* line 317, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_created a {
   color: black;
   text-decoration: underline;
 }
-/* line 314, ..\themes\nazk_ui\less\parts.less */
+/* line 324, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap {
   background: #e9ebeb;
   border-bottom: #ebc308 60px solid;
 }
-/* line 318, ..\themes\nazk_ui\less\parts.less */
+/* line 328, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap .footer {
   border: none;
 }
-/* line 323, ..\themes\nazk_ui\less\parts.less */
+/* line 333, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu a {
   font-size: 12px;
   color: black;
   white-space: normal;
   padding-left: 0;
 }
-/* line 329, ..\themes\nazk_ui\less\parts.less */
+/* line 339, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu a .caret {
   display: none;
 }
-/* line 334, ..\themes\nazk_ui\less\parts.less */
+/* line 344, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu {
   display: block;
   position: static;
@@ -9797,22 +9849,26 @@ img {
   min-width: 0;
   width: 100%;
 }
-/* line 345, ..\themes\nazk_ui\less\parts.less */
+/* line 355, ..\themes\nazk_ui\less\parts.less */
+.footer_wrap #block-system-main-menu .dropdown-menu:after {
+  display: none;
+}
+/* line 359, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu > .active > a {
   background: none;
   color: #7cbce3;
 }
-/* line 350, ..\themes\nazk_ui\less\parts.less */
+/* line 364, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu li {
   margin-bottom: 10px;
 }
-/* line 357, ..\themes\nazk_ui\less\parts.less */
+/* line 371, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu > ul > li > a {
   text-transform: uppercase;
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  /* line 362, ..\themes\nazk_ui\less\parts.less */
+  /* line 376, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9834,7 +9890,7 @@ img {
   }
 }
 @media (min-width: 992px) {
-  /* line 366, ..\themes\nazk_ui\less\parts.less */
+  /* line 380, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9856,7 +9912,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  /* line 370, ..\themes\nazk_ui\less\parts.less */
+  /* line 384, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9877,68 +9933,70 @@ img {
     float: left;
   }
 }
-/* line 377, ..\themes\nazk_ui\less\parts.less */
+/* line 391, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 {
   border-top: #b4b4b4 1px solid;
   margin-top: 40px;
   padding-top: 40px;
   font-size: 16px;
 }
-/* line 383, ..\themes\nazk_ui\less\parts.less */
+/* line 397, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 389, ..\themes\nazk_ui\less\parts.less */
+/* line 403, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul li {
   padding-right: 40px;
   text-align: center;
 }
-/* line 393, ..\themes\nazk_ui\less\parts.less */
+/* line 407, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul li a {
   color: #303030;
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 400, ..\themes\nazk_ui\less\parts.less */
+  /* line 414, ..\themes\nazk_ui\less\parts.less */
   #block-block-4 ul {
     display: table;
   }
-  /* line 403, ..\themes\nazk_ui\less\parts.less */
+  /* line 417, ..\themes\nazk_ui\less\parts.less */
   #block-block-4 ul li {
     display: table-cell;
   }
 }
-@media (min-width: 768px) {
-  /* line 412, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 992px) {
+  /* line 426, ..\themes\nazk_ui\less\parts.less */
   .pre-header .search-block {
     float: right;
     clear: right;
   }
 }
-/* line 417, ..\themes\nazk_ui\less\parts.less */
+/* line 431, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block #edit-type-wrapper,
 .pre-header .search-block #edit-created-wrapper,
 .pre-header .search-block #edit-created-1-wrapper,
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper label {
   display: none;
 }
-/* line 424, ..\themes\nazk_ui\less\parts.less */
+/* line 438, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper {
   padding-top: 0;
 }
-/* line 427, ..\themes\nazk_ui\less\parts.less */
-.pre-header .search-block #edit-search-api-views-fulltext-wrapper input {
-  max-width: 180px;
+@media (min-width: 1200px) {
+  /* line 442, ..\themes\nazk_ui\less\parts.less */
+  .pre-header .search-block #edit-search-api-views-fulltext-wrapper input {
+    max-width: 210px;
+  }
 }
-/* line 432, ..\themes\nazk_ui\less\parts.less */
+/* line 448, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block .views-submit-button {
   margin-right: 0;
   padding: 0;
 }
-/* line 437, ..\themes\nazk_ui\less\parts.less */
+/* line 453, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block button {
   text-indent: -9999px;
   margin-top: 0 !important;
@@ -9947,35 +10005,35 @@ img {
   background: #7cbce3 url(../images/find.png) no-repeat center center;
   border-color: #7cbce3;
 }
-/* line 445, ..\themes\nazk_ui\less\parts.less */
+/* line 461, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block button:hover {
   color: #ebc308;
 }
-/* line 453, ..\themes\nazk_ui\less\parts.less */
+/* line 469, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .form-item-created-date label,
 #block-views-exp-search-page .form-item-created-1-date label,
 #block-views-exp-search-page .form-item-created-date .help-block,
 #block-views-exp-search-page .form-item-created-1-date .help-block {
   display: none;
 }
-/* line 460, ..\themes\nazk_ui\less\parts.less */
+/* line 476, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created,
 #block-views-exp-search-page .views-submit-button {
   clear: left;
 }
-/* line 466, ..\themes\nazk_ui\less\parts.less */
+/* line 482, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item {
   margin-right: 0;
 }
-/* line 469, ..\themes\nazk_ui\less\parts.less */
+/* line 485, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item input {
   margin-right: 0;
 }
-/* line 475, ..\themes\nazk_ui\less\parts.less */
+/* line 491, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button {
   padding: 0;
 }
-/* line 478, ..\themes\nazk_ui\less\parts.less */
+/* line 494, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button button {
   text-indent: -9999px;
   height: 44px;
@@ -9984,16 +10042,16 @@ img {
   background: #7cbce3 url(../images/find.png) no-repeat center center;
   border-color: #7cbce3;
 }
-/* line 486, ..\themes\nazk_ui\less\parts.less */
+/* line 502, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button button:hover {
   color: #ebc308;
 }
-/* line 494, ..\themes\nazk_ui\less\parts.less */
+/* line 510, ..\themes\nazk_ui\less\parts.less */
 .webform-component--detali.webform-conditional-hidden ~ .form-actions {
   display: none;
 }
-@media (min-width: 992px) {
-  /* line 500, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 1200px) {
+  /* line 516, ..\themes\nazk_ui\less\parts.less */
   #block-block-5,
   #block-block-6 {
     position: relative;
@@ -10003,40 +10061,55 @@ img {
     float: left;
   }
 }
-/* line 509, ..\themes\nazk_ui\less\parts.less */
+/* line 525, ..\themes\nazk_ui\less\parts.less */
 #block-block-5 {
   padding-left: 20px;
   font-size: 14px;
   margin-bottom: 40px;
 }
-@media (min-width: 992px) {
-  /* line 510, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 1200px) {
+  /* line 526, ..\themes\nazk_ui\less\parts.less */
   #block-block-5 {
     width: 60%;
   }
 }
-/* line 518, ..\themes\nazk_ui\less\parts.less */
+/* line 534, ..\themes\nazk_ui\less\parts.less */
 #block-block-5 img {
   max-width: 25px;
   margin-right: 20px;
 }
-/* line 524, ..\themes\nazk_ui\less\parts.less */
-#block-block-6 {
-  text-align: right;
+@media (max-width: 991px) {
+  /* line 541, ..\themes\nazk_ui\less\parts.less */
+  #block-block-6 {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 992px) {
-  /* line 525, ..\themes\nazk_ui\less\parts.less */
+  /* line 546, ..\themes\nazk_ui\less\parts.less */
+  #block-block-6 {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 550, ..\themes\nazk_ui\less\parts.less */
   #block-block-6 {
     width: 40%;
   }
 }
-/* line 531, ..\themes\nazk_ui\less\parts.less */
+/* line 554, ..\themes\nazk_ui\less\parts.less */
+#block-block-6 .form-inline .form-control {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+/* line 560, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 label {
   display: block;
   font-weight: 300;
   font-size: 14px;
 }
-/* line 537, ..\themes\nazk_ui\less\parts.less */
+/* line 566, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .button {
   height: 34px;
   box-sizing: border-box;
@@ -10046,36 +10119,36 @@ img {
   font-weight: 300;
   padding: 7px 30px;
 }
-/* line 546, ..\themes\nazk_ui\less\parts.less */
+/* line 575, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .button:hover {
   background-color: #ebc308;
   border-color: #ebc308;
   color: black;
 }
-/* line 554, ..\themes\nazk_ui\less\parts.less */
+/* line 583, ..\themes\nazk_ui\less\parts.less */
 #block-system-main-menu {
   clear: both;
 }
-/* line 558, ..\themes\nazk_ui\less\parts.less */
+/* line 587, ..\themes\nazk_ui\less\parts.less */
 #block-block-7,
 #block-block-8 {
   border-top: #b4b4b4 1px solid;
   margin-top: 80px;
   padding-top: 40px;
 }
-/* line 564, ..\themes\nazk_ui\less\parts.less */
+/* line 593, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 h2,
 #block-block-8 h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-/* line 569, ..\themes\nazk_ui\less\parts.less */
+/* line 598, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 ul,
 #block-block-8 ul {
   margin: 0;
   padding: 0;
 }
-/* line 574, ..\themes\nazk_ui\less\parts.less */
+/* line 603, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li,
 #block-block-8 li {
   list-style: none;
@@ -10084,7 +10157,7 @@ img {
   text-align: center;
   margin-right: 20px;
 }
-/* line 581, ..\themes\nazk_ui\less\parts.less */
+/* line 610, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li a,
 #block-block-8 li a {
   display: block;
@@ -10093,18 +10166,18 @@ img {
   font-size: 12px;
   color: black;
 }
-/* line 589, ..\themes\nazk_ui\less\parts.less */
+/* line 618, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li p a,
 #block-block-8 li p a {
   height: auto;
 }
-/* line 593, ..\themes\nazk_ui\less\parts.less */
+/* line 622, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li img,
 #block-block-8 li img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 600, ..\themes\nazk_ui\less\parts.less */
+/* line 629, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div {
   border: none;
   background: white;
@@ -10112,13 +10185,13 @@ img {
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
   transition: all ease-in-out 0.5s;
 }
-/* line 607, ..\themes\nazk_ui\less\parts.less */
+/* line 636, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-datepicker-header {
   border: none;
   background: #7cbce3;
   border-radius: 0;
 }
-/* line 613, ..\themes\nazk_ui\less\parts.less */
+/* line 642, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-state-default,
 #ui-datepicker-div .ui-widget-content .ui-state-default,
 #ui-datepicker-div .ui-widget-header .ui-state-default {
@@ -10126,24 +10199,24 @@ img {
   border: none;
   transition: all ease-in-out 0.3s;
 }
-/* line 620, ..\themes\nazk_ui\less\parts.less */
+/* line 649, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-content .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-header .ui-state-default:hover {
   background: #7cbce3;
   color: white;
 }
-/* line 626, ..\themes\nazk_ui\less\parts.less */
+/* line 655, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-datepicker-today a {
   background: #7cbce3;
   color: white;
 }
-/* line 633, ..\themes\nazk_ui\less\parts.less */
+/* line 662, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy {
   position: relative;
   margin: 40px auto 100px !important;
 }
-/* line 637, ..\themes\nazk_ui\less\parts.less */
+/* line 666, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li {
   border-radius: 100%;
   border: #7cbce3 1px solid;
@@ -10155,60 +10228,72 @@ img {
   right: auto;
   position: absolute;
 }
-/* line 648, ..\themes\nazk_ui\less\parts.less */
+/* line 677, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.empty {
   display: none !important;
 }
-/* line 652, ..\themes\nazk_ui\less\parts.less */
+/* line 681, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.next {
   right: 0;
   left: auto;
 }
-/* line 656, ..\themes\nazk_ui\less\parts.less */
+/* line 685, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.next .hover-popup:before {
   content: '\f30f';
 }
-/* line 662, ..\themes\nazk_ui\less\parts.less */
+/* line 691, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup {
   text-decoration: none;
   display: block;
 }
-/* line 666, ..\themes\nazk_ui\less\parts.less */
+/* line 695, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup span {
   display: none;
 }
-/* line 670, ..\themes\nazk_ui\less\parts.less */
+/* line 699, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup:before {
   content: '\f2ca';
   font-family: "Ionicons";
 }
-/* line 678, ..\themes\nazk_ui\less\parts.less */
+/* line 707, ..\themes\nazk_ui\less\parts.less */
 .popover {
   max-width: 600px;
   min-width: 200px;
 }
-/* line 682, ..\themes\nazk_ui\less\parts.less */
+/* line 711, ..\themes\nazk_ui\less\parts.less */
 .popover .popover-title {
   background: #7cbce3;
   color: white;
 }
-/* line 688, ..\themes\nazk_ui\less\parts.less */
+/* line 717, ..\themes\nazk_ui\less\parts.less */
 #switch-theme .standart-theme {
   display: none;
 }
-/* line 693, ..\themes\nazk_ui\less\parts.less */
+/* line 722, ..\themes\nazk_ui\less\parts.less */
 .contrast #switch-theme .standart-theme {
   display: list-item;
 }
-/* line 697, ..\themes\nazk_ui\less\parts.less */
+/* line 726, ..\themes\nazk_ui\less\parts.less */
 .contrast #switch-theme .contrast-theme {
   display: none;
+}
+@media (max-width: 991px) {
+  /* line 732, ..\themes\nazk_ui\less\parts.less */
+  .content_bottom_wrap {
+    padding-bottom: 40px;
+  }
 }
 /* line 2, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .logo {
   margin-top: 35px;
 }
-/* line 6, ..\themes\nazk_ui\less\pages.less */
+@media (max-width: 991px) {
+  /* line 5, ..\themes\nazk_ui\less\pages.less */
+  .node-news-intro .logo {
+    margin-bottom: 20px;
+  }
+}
+/* line 10, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .social-links {
   margin-top: 10px;
   clear: both;
@@ -10216,15 +10301,15 @@ img {
   text-align: left;
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
-  /* line 13, ..\themes\nazk_ui\less\pages.less */
+@media (min-width: 992px) {
+  /* line 17, ..\themes\nazk_ui\less\pages.less */
   .node-news-intro .social-links {
     clear: right;
     float: right !important;
     margin-bottom: 0;
   }
 }
-/* line 19, ..\themes\nazk_ui\less\pages.less */
+/* line 23, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .social-links a {
   font-size: 16px;
   color: white;
@@ -10239,45 +10324,49 @@ img {
   transform: scale(1, 1);
   transition: all ease-in-out 0.1s;
 }
-/* line 33, ..\themes\nazk_ui\less\pages.less */
+/* line 37, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .social-links a:hover {
   transform: scale(1.2, 1.2);
   background: #ebc308;
 }
-/* line 40, ..\themes\nazk_ui\less\pages.less */
+/* line 44, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .lang-switch {
   clear: both;
   text-align: left;
 }
-/* line 44, ..\themes\nazk_ui\less\pages.less */
+/* line 48, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .lang-switch .ofsite {
   font-size: 13px;
   text-transform: uppercase;
   line-height: 32px;
 }
-@media (min-width: 768px) {
-  /* line 50, ..\themes\nazk_ui\less\pages.less */
+@media (min-width: 992px) {
+  /* line 54, ..\themes\nazk_ui\less\pages.less */
   .node-news-intro .lang-switch {
     float: right;
     clear: right;
     margin-top: 30px;
   }
-  /* line 55, ..\themes\nazk_ui\less\pages.less */
+  /* line 59, ..\themes\nazk_ui\less\pages.less */
   .node-news-intro .lang-switch .ofsite {
     float: left;
   }
-  /* line 59, ..\themes\nazk_ui\less\pages.less */
+  /* line 62, ..\themes\nazk_ui\less\pages.less */
+  .node-news-intro .lang-switch .ofsite img {
+    margin-right: 10px;
+  }
+  /* line 67, ..\themes\nazk_ui\less\pages.less */
   .node-news-intro .lang-switch ul {
     float: right;
   }
 }
-/* line 64, ..\themes\nazk_ui\less\pages.less */
+/* line 72, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .lang-switch li {
   display: inline;
   margin-left: 15px;
   list-style: none;
 }
-/* line 69, ..\themes\nazk_ui\less\pages.less */
+/* line 77, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .lang-switch li a,
 .node-news-intro .lang-switch li span {
   color: black;
@@ -10285,13 +10374,13 @@ img {
   font-size: 12px;
   text-transform: uppercase;
 }
-/* line 79, ..\themes\nazk_ui\less\pages.less */
+/* line 87, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .field-name-body {
   font-weight: 500;
   font-style: italic;
   font-size: 18px;
 }
-/* line 84, ..\themes\nazk_ui\less\pages.less */
+/* line 92, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .field-name-body:after {
   content: '';
   display: block;
@@ -10300,17 +10389,14 @@ img {
   background: #ebc308;
   margin: 20px 0;
 }
-/* line 89, ..\themes\nazk_ui\less\pages.less */
+/* line 97, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .submitted {
   font-weight: 700;
   font-style: normal;
   color: black;
 }
-/* line 95, ..\themes\nazk_ui\less\pages.less */
+/* line 103, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .node-cover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   opacity: 0.3;
   position: absolute;
   z-index: -1;
@@ -10318,31 +10404,42 @@ img {
   top: 0;
   width: 100%;
 }
-/* line 109, ..\themes\nazk_ui\less\pages.less */
+/* line 113, ..\themes\nazk_ui\less\pages.less */
+.node-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 120, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-newspage .node-news-intro {
   width: 100%;
-  height: 670px;
 }
-/* line 113, ..\themes\nazk_ui\less\pages.less */
+@media (min-width: 1200px) {
+  /* line 123, ..\themes\nazk_ui\less\pages.less */
+  .page-node.node-type-newspage .node-news-intro {
+    height: 670px;
+  }
+}
+/* line 127, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-newspage .node-news-intro .node-cover {
   height: 670px;
 }
-/* line 118, ..\themes\nazk_ui\less\pages.less */
+/* line 132, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-newspage .main-container {
   margin-top: 40px;
 }
-/* line 125, ..\themes\nazk_ui\less\pages.less */
+/* line 139, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage .node-news-intro .node-cover {
   background-image: url(../images/page_bg.jpg);
   height: 190px;
   background-position: center center;
   background-size: cover;
 }
-/* line 132, ..\themes\nazk_ui\less\pages.less */
+/* line 146, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage .node-news-intro h1.page-title {
   font-size: 72px;
 }
-/* line 136, ..\themes\nazk_ui\less\pages.less */
+/* line 150, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage .node-news-intro .field-name-body:after {
   content: '';
   display: block;
@@ -10351,69 +10448,74 @@ img {
   background: #ebc308;
   margin: 40px 0;
 }
-/* line 142, ..\themes\nazk_ui\less\pages.less */
+/* line 156, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage.front .node-news-intro .node-cover {
   background-image: url(../images/front.jpg);
   background-position: center center;
   background-size: cover;
 }
-/* line 151, ..\themes\nazk_ui\less\pages.less */
+/* line 165, ..\themes\nazk_ui\less\pages.less */
 .page-news .node-news-intro {
   width: 100%;
-  height: 670px;
 }
-/* line 155, ..\themes\nazk_ui\less\pages.less */
+@media (min-width: 992px) {
+  /* line 168, ..\themes\nazk_ui\less\pages.less */
+  .page-news .node-news-intro {
+    height: 670px;
+  }
+}
+/* line 172, ..\themes\nazk_ui\less\pages.less */
 .page-news .node-news-intro .node-cover {
   height: 670px;
 }
-/* line 160, ..\themes\nazk_ui\less\pages.less */
+/* line 177, ..\themes\nazk_ui\less\pages.less */
 .page-news .main-container {
   margin-top: 80px;
 }
-/* line 164, ..\themes\nazk_ui\less\pages.less */
+/* line 181, ..\themes\nazk_ui\less\pages.less */
 .page-news .submitted {
   margin-right: 100px;
 }
-/* line 170, ..\themes\nazk_ui\less\pages.less */
+/* line 187, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .field-name-field-photo {
   float: left;
   margin-right: 90px;
 }
-/* line 175, ..\themes\nazk_ui\less\pages.less */
+/* line 192, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember h1 {
   display: none;
 }
-/* line 179, ..\themes\nazk_ui\less\pages.less */
+/* line 196, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .topblock {
   overflow: hidden;
   margin-top: 80px;
 }
-/* line 184, ..\themes\nazk_ui\less\pages.less */
+/* line 201, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .content {
   clear: both;
   margin-top: 40px;
 }
-/* line 188, ..\themes\nazk_ui\less\pages.less */
+/* line 205, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .content p {
   margin-bottom: 0;
 }
-/* line 193, ..\themes\nazk_ui\less\pages.less */
+/* line 210, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .h2,
 .page-node.node-type-teammember .field-name-field-position {
   margin-top: 40px;
 }
-/* line 198, ..\themes\nazk_ui\less\pages.less */
+/* line 215, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember h2 {
   font-weight: 400;
   font-size: 50px;
   text-transform: none;
 }
-/* line 204, ..\themes\nazk_ui\less\pages.less */
+/* line 221, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .field-name-field-position {
   font-style: italic;
   font-size: 30px;
 }
-/* line 208, ..\themes\nazk_ui\less\pages.less */
+/* line 225, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .field-name-field-position:after {
   content: '';
   display: block;
@@ -10423,14 +10525,14 @@ img {
   margin: 40px 0;
   margin-left: 340px;
 }
-/* line 216, ..\themes\nazk_ui\less\pages.less */
+/* line 233, ..\themes\nazk_ui\less\pages.less */
 .page-node-36 h1,
 .page-node-36 #sideblocks,
 .page-node-36 #social-share,
 .page-node-36 .first-one {
   display: none;
 }
-/* line 223, ..\themes\nazk_ui\less\pages.less */
+/* line 240, ..\themes\nazk_ui\less\pages.less */
 .page-node-36 .main-container.container {
   width: 100%;
   padding: 0;
@@ -10442,35 +10544,41 @@ img {
             background-position: center center;
         }*/
 }
-/* line 228, ..\themes\nazk_ui\less\pages.less */
+/* line 245, ..\themes\nazk_ui\less\pages.less */
 .page-node-36 .main-container.container .container-padding,
 .page-node-36 .main-container.container .container-padding .row,
 .page-node-36 .main-container.container .container-padding .col-sm-12 {
   padding: 0 !important;
   margin: 0 !important;
 }
-/* line 247, ..\themes\nazk_ui\less\pages.less */
+/* line 264, ..\themes\nazk_ui\less\pages.less */
 .front h1,
 .front .content {
   display: none;
 }
-/* line 252, ..\themes\nazk_ui\less\pages.less */
+/* line 269, ..\themes\nazk_ui\less\pages.less */
 .front .node-news-intro .node-cover {
   opacity: 1;
 }
-/* line 256, ..\themes\nazk_ui\less\pages.less */
+/* line 273, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute {
   background: #ebc308;
-  width: 300px;
-  position: absolute;
-  left: 0;
-  margin-top: -100px;
+  width: 100%;
 }
-/* line 263, ..\themes\nazk_ui\less\pages.less */
+@media (min-width: 1200px) {
+  /* line 277, ..\themes\nazk_ui\less\pages.less */
+  .front #frontquoute {
+    position: absolute;
+    left: 0;
+    margin-top: -100px;
+    width: 300px;
+  }
+}
+/* line 284, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body {
   padding: 60px 40px;
 }
-/* line 266, ..\themes\nazk_ui\less\pages.less */
+/* line 287, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body p {
   text-align: left;
   color: black;
@@ -10479,7 +10587,7 @@ img {
   font-style: normal;
   position: relative;
 }
-/* line 274, ..\themes\nazk_ui\less\pages.less */
+/* line 295, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body p:before,
 .front #frontquoute .field-name-body p:after {
   content: '"';
@@ -10491,89 +10599,95 @@ img {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-/* line 286, ..\themes\nazk_ui\less\pages.less */
+/* line 307, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body p:before {
   transform: rotate(180deg);
   left: -10px;
   top: -60px;
 }
-/* line 292, ..\themes\nazk_ui\less\pages.less */
+/* line 313, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body p:after {
   right: 0;
   margin-top: 20px;
 }
-/* line 298, ..\themes\nazk_ui\less\pages.less */
+/* line 319, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body:after {
   display: none;
 }
-/* line 305, ..\themes\nazk_ui\less\pages.less */
+/* line 326, ..\themes\nazk_ui\less\pages.less */
 .front #social-share:before {
   display: none;
 }
-/* line 310, ..\themes\nazk_ui\less\pages.less */
+/* line 331, ..\themes\nazk_ui\less\pages.less */
 .front #sideblocks {
   position: static;
   width: 100% !important;
   display: table;
   margin-top: 80px;
 }
-/* line 316, ..\themes\nazk_ui\less\pages.less */
-.front #sideblocks .sblock-group,
-.front #sideblocks .side-buttons-group {
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
+@media (min-width: 1200px) {
+  /* line 338, ..\themes\nazk_ui\less\pages.less */
+  .front #sideblocks .sblock-group,
+  .front #sideblocks .side-buttons-group {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
 }
-/* line 323, ..\themes\nazk_ui\less\pages.less */
-.front #sideblocks .sblock-group {
-  padding-right: 80px;
+@media (min-width: 1200px) {
+  /* line 347, ..\themes\nazk_ui\less\pages.less */
+  .front #sideblocks .sblock-group {
+    padding-right: 80px;
+  }
 }
-/* line 325, ..\themes\nazk_ui\less\pages.less */
+/* line 351, ..\themes\nazk_ui\less\pages.less */
 .front #sideblocks .sblock-group .sblock {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 331, ..\themes\nazk_ui\less\pages.less */
-.front #sideblocks .side-buttons-group {
-  padding-left: 80px;
+@media (min-width: 1200px) {
+  /* line 358, ..\themes\nazk_ui\less\pages.less */
+  .front #sideblocks .side-buttons-group {
+    padding-left: 80px;
+  }
 }
-/* line 333, ..\themes\nazk_ui\less\pages.less */
+/* line 362, ..\themes\nazk_ui\less\pages.less */
 .front #sideblocks .side-buttons-group .side-button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 340, ..\themes\nazk_ui\less\pages.less */
+/* line 369, ..\themes\nazk_ui\less\pages.less */
 .front .container-padding {
   padding-right: 0 !important;
 }
-/* line 344, ..\themes\nazk_ui\less\pages.less */
+/* line 373, ..\themes\nazk_ui\less\pages.less */
 .front #block-system-main {
   display: none;
 }
-/* line 351, ..\themes\nazk_ui\less\pages.less */
+/* line 380, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .container-padding .page-teaser,
 .page-node-77 .container-padding .page-teaser {
   display: none;
 }
-/* line 355, ..\themes\nazk_ui\less\pages.less */
+/* line 384, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 iframe,
 .page-node-77 iframe {
   margin-bottom: 120px;
 }
-/* line 359, ..\themes\nazk_ui\less\pages.less */
+/* line 388, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .tel,
 .page-node-77 .tel {
   font-size: 60px;
   line-height: 120%;
   margin-bottom: 80px;
 }
-/* line 364, ..\themes\nazk_ui\less\pages.less */
+/* line 393, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .tel a,
 .page-node-77 .tel a {
   display: block;
   color: black;
 }
-/* line 369, ..\themes\nazk_ui\less\pages.less */
+/* line 398, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .tel:after,
 .page-node-77 .tel:after {
   content: '';
@@ -10583,17 +10697,17 @@ img {
   background: #ebc308;
   margin: 60px 0;
 }
-/* line 374, ..\themes\nazk_ui\less\pages.less */
+/* line 403, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .adress,
 .page-node-77 .adress {
   margin-bottom: 80px;
 }
-/* line 377, ..\themes\nazk_ui\less\pages.less */
+/* line 406, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .adress p,
 .page-node-77 .adress p {
   margin-bottom: 20px;
 }
-/* line 381, ..\themes\nazk_ui\less\pages.less */
+/* line 410, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .adress:after,
 .page-node-77 .adress:after {
   content: '';
@@ -10603,42 +10717,98 @@ img {
   background: #ebc308;
   margin: 60px 0;
 }
-/* line 387, ..\themes\nazk_ui\less\pages.less */
+/* line 416, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .email a,
 .page-node-77 .email a {
   display: block;
   color: black;
 }
-/* line 393, ..\themes\nazk_ui\less\pages.less */
+/* line 422, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 #social-share,
 .page-node-77 #social-share {
   margin-top: 80px;
 }
-/* line 396, ..\themes\nazk_ui\less\pages.less */
+/* line 425, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 #social-share:before,
 .page-node-77 #social-share:before {
   display: none;
 }
-/* line 402, ..\themes\nazk_ui\less\pages.less */
+/* line 431, ..\themes\nazk_ui\less\pages.less */
 .view-search {
   margin-top: 20px;
 }
-/* line 405, ..\themes\nazk_ui\less\pages.less */
+/* line 434, ..\themes\nazk_ui\less\pages.less */
 .view-search .views-row {
   padding: 20px 40px;
   background: white;
   margin-bottom: 40px;
 }
-/* line 410, ..\themes\nazk_ui\less\pages.less */
+/* line 439, ..\themes\nazk_ui\less\pages.less */
 .view-search .views-row h2 {
   margin-bottom: 40px;
 }
-/* line 414, ..\themes\nazk_ui\less\pages.less */
+/* line 443, ..\themes\nazk_ui\less\pages.less */
 .view-search .views-row .field-name-field-main-pic {
   float: left;
   margin: 0 40px 20px 0;
 }
-/* line 2, ..\themes\nazk_ui\less\contrast.less */
-body.contrast .footer_wrap {
-  background: white;
+/* line 2, ..\themes\nazk_ui\less\responsive.less */
+#navbar .lang-switch,
+#navbar .social-links {
+  display: block;
+}
+@media (min-width: 992px) {
+  /* line 6, ..\themes\nazk_ui\less\responsive.less */
+  #navbar .lang-switch,
+  #navbar .social-links {
+    display: none;
+  }
+}
+/* line 13, ..\themes\nazk_ui\less\responsive.less */
+.pre-header .lang-switch,
+.pre-header .social-links {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 17, ..\themes\nazk_ui\less\responsive.less */
+  .pre-header .lang-switch,
+  .pre-header .social-links {
+    display: block;
+  }
+}
+/* line 24, ..\themes\nazk_ui\less\responsive.less */
+.node-news-intro .node-cover {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 27, ..\themes\nazk_ui\less\responsive.less */
+  .node-news-intro .node-cover {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  /* line 34, ..\themes\nazk_ui\less\responsive.less */
+  .node-news-intro .container-padding .node-cover {
+    display: block;
+    position: static;
+    height: 300px;
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  /* line 41, ..\themes\nazk_ui\less\responsive.less */
+  .node-news-intro .container-padding .node-cover {
+    display: none;
+  }
+}
+/* line 49, ..\themes\nazk_ui\less\responsive.less */
+.main-container .node-cover {
+  display: block;
+  min-height: 300px;
+}
+@media (min-width: 992px) {
+  /* line 53, ..\themes\nazk_ui\less\responsive.less */
+  .main-container .node-cover {
+    display: none;
+  }
 }

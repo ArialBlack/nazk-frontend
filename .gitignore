@@ -42,3 +42,6 @@ sites/all/modules/
 
 .ftpauth
 sites/all/themes/nazk_ui/css/style.css
+sites/all/themes/nazk_uicontrast/css/style.css
+sites/all/themes/nazk_uicontrast/less/style.less
+sites/all/themes/nazk_uicontrast/css/style.css

@@ -1,5 +1,5 @@
 .pre-header {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         height: @pre-header-height;
     }
     
@@ -9,6 +9,12 @@
     
     .gerb {
         margin-top: 35px;
+    }
+    
+    .search-block {
+        @media (max-width: 991px) {
+            clear: both;
+        }
     }
 }
 
@@ -73,9 +79,36 @@
         }
     }
     
+    .navbar-toggle {
+        border: white;
+        
+        .icon-bar {
+            background: white;
+        }
+        
+        &:hover {
+            background: @nazk-blue;
+        }
+    }
+    
     .menu.navbar-nav .last.dropdown .dropdown-menu {
          a {
              white-space: normal;
          }
+    }
+    
+    .language-switcher-locale-url {
+        margin-left: 0;
+        padding-left: 0;
+        
+        li {
+            margin-left: 0;
+            padding-left: 0;
+            margin-right: 15px;
+        }
+        
+        a {
+            padding: 0;
+        }
     }
 }

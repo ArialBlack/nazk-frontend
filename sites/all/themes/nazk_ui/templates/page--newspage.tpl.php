@@ -109,7 +109,7 @@
                 <?php endif; ?>
                 
                 <div class="lang-switch">
-                    <span class="ofsite"><?php print t("Official website"); ?></span>
+                    <span class="ofsite"><img src="/sites/all/themes/nazk_ui/images/uasmall.png" width="14" height="23" alt=""/> <?php print t("Official website"); ?></span>
                     <?php
                         $block = module_invoke('locale', 'block_view', 'language');
                         print render($block['content']);
@@ -154,6 +154,24 @@
                       <?php if (!empty($primary_nav)): ?>
                         <?php print render($primary_nav); ?>
                       <?php endif; ?>
+                      
+                <div class="lang-switch">
+                    <span class="ofsite"><?php print t("Official website"); ?></span>
+                    <?php
+                        $block = module_invoke('locale', 'block_view', 'language');
+                        print render($block['content']);
+                    ?>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
+                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i></a>
+                    <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i></a>
+                    <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i></a>
+                </div>   
+                
+                
                       <?php if (!empty($secondary_nav)): ?>
                         <?php print render($secondary_nav); ?>
                       <?php endif; ?>
@@ -236,6 +254,13 @@
           <?php if (!empty($action_links)): ?>
             <ul class="action-links"><?php print render($action_links); ?></ul>
           <?php endif; ?>
+          
+                        <div class="node-cover" 
+    <?php if (strlen($img_url) > 0): ?>
+         style="background-image: url('<?php print image_style_url("cover", $img_url) ?>')"
+    <?php endif; ?>
+    ></div>
+    
           <?php print render($page['content']); ?>
           
           <div id="social-share">

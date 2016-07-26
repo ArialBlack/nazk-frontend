@@ -106,6 +106,7 @@
     
     .col:first-child {
         padding-right: 40px;
+        margin-bottom: 40px;
     }
     
     .col:last-child {
@@ -155,16 +156,21 @@
 }
 
 .front #block-views-news-block-3 {
-    margin-top: -68px;
+    @media (min-width: 1200px) {
+        margin-top: -68px;
+    }
     
     h2 {
         margin: 0 auto;
         text-align: center;
-        display: block;
-        background: url(../images/folder.png) no-repeat center center;
-        width: 468px;
-        padding: 20px 50px;
-        margin-bottom: 80px;
+        
+        @media (min-width: 1200px) {
+            display: block;
+            background: url(../images/folder.png) no-repeat center center;
+            width: 468px;
+            padding: 20px 50px;
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -301,6 +307,10 @@
     .field_body {
         font-size: 17px;
         line-height: normal;
+        
+        .rtejustify {
+            text-align: left;
+        }
     }
     
     .field_created {
@@ -341,6 +351,10 @@
             margin: 0;
             min-width: 0;
             width: 100%;
+            
+            &:after {
+                display: none;
+            }
             
             > .active > a {
                 background: none;
@@ -409,7 +423,7 @@
 
 .pre-header {
     .search-block {
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
             float: right;
             clear: right;
         }
@@ -425,7 +439,9 @@
             padding-top: 0;
             
             input {
-                max-width: 180px;
+                @media (min-width: 1200px) {
+                    max-width: 210px;
+                }
             }
         }
         
@@ -497,7 +513,7 @@
 
 #block-block-5,
 #block-block-6 {
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         position: relative;
         min-height: 1px;
         padding-left: 15px;
@@ -507,7 +523,7 @@
 }
 
 #block-block-5 {
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         width: 60%;
     }
     
@@ -522,11 +538,24 @@
 }
 
 #block-block-6 {
+    @media (max-width: 991px) {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    
     @media (min-width: 992px) {
+        text-align: right;
+    }
+    
+    @media (min-width: 1200px) {
         width: 40%
     }
     
-    text-align: right;
+    .form-inline .form-control {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
     
     label {
         display: block;
@@ -696,5 +725,11 @@
     
     #switch-theme .contrast-theme {
         display: none;
+    }
+}
+
+.content_bottom_wrap {
+    @media (max-width: 991px) {
+        padding-bottom: 40px;
     }
 }

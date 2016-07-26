@@ -149,6 +149,23 @@
                       <?php if (!empty($primary_nav)): ?>
                         <?php print render($primary_nav); ?>
                       <?php endif; ?>
+                      
+                     <div class="social-links">
+                        <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i> Facebook</a>
+                        <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i> Twitter</a>
+                        <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i> Instagram</a>
+                        <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i> Youtube</a>
+                        <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i> Google+</a>
+                    </div>
+                    
+                <div class="lang-switch">
+                    <span class="ofsite"><?php print t("Official website"); ?></span>
+                    <?php
+                        $block = module_invoke('locale', 'block_view', 'language');
+                        print render($block['content']);
+                    ?>
+                </div>
+                     
                       <?php if (!empty($secondary_nav)): ?>
                         <?php print render($secondary_nav); ?>
                       <?php endif; ?>
