@@ -35,14 +35,14 @@ module.exports = function(grunt) {
                         ],
                         dest: '/sites/all/themes/nazk_ui'
                     },
-                   /* {
+                    {
                        expand: true,
                        cwd: '../themes/nazk_uicontrast',
                         src: [
                        "**"
                         ],
                         dest: '/sites/all/themes/nazk_uicontrast'
-                    },*/
+                    },
                     {
                        expand: true,
                        cwd: '../modules',
@@ -62,8 +62,8 @@ module.exports = function(grunt) {
 
             less: {
                 files: [
-                    '../themes/nazk_ui/less/**/*.less'
-                   // '../themes/nazk_uicontrast/less/**/*.less'
+                    '../themes/nazk_ui/less/**/*.less',
+                    '../themes/nazk_uicontrast/less/**/*.less'
                 ],
                 tasks: ['less', 'postcss']
             },
@@ -71,10 +71,10 @@ module.exports = function(grunt) {
             ftppush: {
                 files: [
                     '../themes/nazk_ui/**/*.*',
-                    //'../themes/nazk_uicontrast/**/*.*',
+                    '../themes/nazk_uicontrast/**/*.*',
                     '/sites/all/modules/**/*.*',
                     '!../themes/nazk_ui/**/*.less',
-                   // '!../themes/nazk_uicontrast/**/*.less'
+                    '!../themes/nazk_uicontrast/**/*.less'
                 ],
                 tasks: ['ftp_push']
             },

@@ -9318,6 +9318,10 @@ img {
   color: white;
   text-decoration: none;
 }
+/* line 166, ..\themes\nazk_ui\less\base.less */
+p.rtejustify {
+  text-align: left;
+}
 @media (min-width: 768px) {
   /* line 6, ..\themes\nazk_ui\less\grid.less */
   .container {
@@ -9542,20 +9546,26 @@ img {
   position: relative;
   transition: all ease-in-out 0.2s;
   right: 0;
-  text-align: center;
+  text-align: left;
 }
-/* line 54, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 768px) {
+  /* line 54, ..\themes\nazk_ui\less\parts.less */
+  #sideblocks .side-button a {
+    text-align: center;
+  }
+}
+/* line 58, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .side-button a:hover {
   right: 10px;
 }
-/* line 58, ..\themes\nazk_ui\less\parts.less */
+/* line 62, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .side-button a i,
 #sideblocks .side-button a .holder {
   text-align: center;
   display: inline-block;
   height: 110px;
 }
-/* line 65, ..\themes\nazk_ui\less\parts.less */
+/* line 69, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .side-button a i {
   background: #f8e64e;
   color: #2c2822;
@@ -9565,7 +9575,7 @@ img {
   padding: 40px 25px;
   float: left;
 }
-/* line 75, ..\themes\nazk_ui\less\parts.less */
+/* line 79, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .side-button a .holder {
   padding: 0 25px;
   color: white;
@@ -9576,8 +9586,15 @@ img {
   line-height: 30px;
   vertical-align: top;
   position: relative;
+  margin-left: 20px;
 }
-/* line 86, ..\themes\nazk_ui\less\parts.less */
+@media (min-width: 768px) {
+  /* line 91, ..\themes\nazk_ui\less\parts.less */
+  #sideblocks .side-button a .holder {
+    margin-left: 0;
+  }
+}
+/* line 95, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .side-button a .holder .text-copy {
   display: inline-block;
   position: absolute;
@@ -9586,7 +9603,7 @@ img {
   left: 0;
   width: 100%;
 }
-/* line 99, ..\themes\nazk_ui\less\parts.less */
+/* line 108, ..\themes\nazk_ui\less\parts.less */
 #social-share:before {
   content: '';
   display: block;
@@ -9595,83 +9612,83 @@ img {
   background: #ebc308;
   margin: 40px 0;
 }
-/* line 103, ..\themes\nazk_ui\less\parts.less */
+/* line 112, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1,
 #block-views-news-block-3 {
   margin-bottom: 80px;
 }
-/* line 107, ..\themes\nazk_ui\less\parts.less */
+/* line 116, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col:first-child,
 #block-views-news-block-3 .col:first-child {
   padding-right: 40px;
   margin-bottom: 40px;
 }
-/* line 112, ..\themes\nazk_ui\less\parts.less */
+/* line 121, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col:last-child,
 #block-views-news-block-3 .col:last-child {
   padding-left: 40px;
 }
-/* line 116, ..\themes\nazk_ui\less\parts.less */
+/* line 125, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col,
 #block-views-news-block-3 .col {
   position: relative;
 }
-/* line 119, ..\themes\nazk_ui\less\parts.less */
+/* line 128, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .col img,
 #block-views-news-block-3 .col img {
   width: 100%;
   height: auto;
 }
-/* line 125, ..\themes\nazk_ui\less\parts.less */
+/* line 134, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing,
 #block-views-news-block-3 .views-field-nothing {
   padding: 30px 0 0 0;
 }
-/* line 128, ..\themes\nazk_ui\less\parts.less */
+/* line 137, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title,
 #block-views-news-block-3 .views-field-nothing .field_title {
   margin-bottom: 10px;
 }
-/* line 131, ..\themes\nazk_ui\less\parts.less */
+/* line 140, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title a,
 #block-views-news-block-3 .views-field-nothing .field_title a {
   color: black;
   font-size: 24px;
 }
-/* line 137, ..\themes\nazk_ui\less\parts.less */
+/* line 146, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_created,
 #block-views-news-block-3 .views-field-nothing .field_created {
   font-size: 12px;
   margin-bottom: 10px;
 }
-/* line 143, ..\themes\nazk_ui\less\parts.less */
+/* line 152, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a,
 #block-views-news-block-3 .views-field-nothing .field_link a {
   color: black;
 }
-/* line 146, ..\themes\nazk_ui\less\parts.less */
+/* line 155, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a span,
 #block-views-news-block-3 .views-field-nothing .field_link a span {
   text-decoration: underline;
 }
-/* line 150, ..\themes\nazk_ui\less\parts.less */
+/* line 159, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a:hover,
 #block-views-news-block-3 .views-field-nothing .field_link a:hover {
   text-decoration: none;
 }
 @media (min-width: 1200px) {
-  /* line 159, ..\themes\nazk_ui\less\parts.less */
+  /* line 168, ..\themes\nazk_ui\less\parts.less */
   .front #block-views-news-block-3 {
     margin-top: -68px;
   }
 }
-/* line 163, ..\themes\nazk_ui\less\parts.less */
+/* line 172, ..\themes\nazk_ui\less\parts.less */
 .front #block-views-news-block-3 h2 {
   margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  /* line 167, ..\themes\nazk_ui\less\parts.less */
+  /* line 176, ..\themes\nazk_ui\less\parts.less */
   .front #block-views-news-block-3 h2 {
     display: block;
     background: url(../images/folder.png) no-repeat center center;
@@ -9680,13 +9697,13 @@ img {
     margin-bottom: 80px;
   }
 }
-/* line 181, ..\themes\nazk_ui\less\parts.less */
+/* line 190, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media,
 .view-team #views-bootstrap-media-1 .media {
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
-/* line 185, ..\themes\nazk_ui\less\parts.less */
+/* line 194, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media:after,
 .view-team #views-bootstrap-media-1 .media:after {
   content: '';
@@ -9696,61 +9713,61 @@ img {
   background: #7cbce3;
   margin-top: 50px;
 }
-/* line 195, ..\themes\nazk_ui\less\parts.less */
+/* line 204, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media:last-child:after,
 .view-team #views-bootstrap-media-1 .media:last-child:after {
   display: none;
 }
-/* line 200, ..\themes\nazk_ui\less\parts.less */
+/* line 209, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media a,
 .view-team #views-bootstrap-media-1 .media a {
   color: black;
 }
-/* line 204, ..\themes\nazk_ui\less\parts.less */
+/* line 213, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .pull-left,
 .view-team #views-bootstrap-media-1 .media .pull-left {
   padding-right: 60px;
   max-width: 400px;
 }
-/* line 209, ..\themes\nazk_ui\less\parts.less */
+/* line 218, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .media-heading,
 .view-team #views-bootstrap-media-1 .media .media-heading {
   font-size: 36px;
 }
-/* line 213, ..\themes\nazk_ui\less\parts.less */
+/* line 222, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_created,
 .view-team #views-bootstrap-media-1 .media .field_created {
   font-size: 12px;
   padding: 10px 0;
 }
-/* line 218, ..\themes\nazk_ui\less\parts.less */
+/* line 227, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_body,
 .view-team #views-bootstrap-media-1 .media .field_body {
   font-size: 16px;
   line-height: normal;
   margin-bottom: 20px;
 }
-/* line 224, ..\themes\nazk_ui\less\parts.less */
+/* line 233, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link,
 .view-team #views-bootstrap-media-1 .media .field_link {
   font-size: 18px;
   text-align: right;
 }
-/* line 228, ..\themes\nazk_ui\less\parts.less */
+/* line 237, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link span,
 .view-team #views-bootstrap-media-1 .media .field_link span {
   text-decoration: underline;
 }
-/* line 236, ..\themes\nazk_ui\less\parts.less */
+/* line 245, ..\themes\nazk_ui\less\parts.less */
 .view-team #views-bootstrap-media-1 .field-position {
   padding: 20px 0;
 }
-/* line 243, ..\themes\nazk_ui\less\parts.less */
+/* line 252, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal {
   text-align: center;
   padding: 0!important;
 }
-/* line 248, ..\themes\nazk_ui\less\parts.less */
+/* line 257, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal:before {
   content: '';
   display: inline-block;
@@ -9758,24 +9775,24 @@ img {
   vertical-align: middle;
   margin-right: -4px;
 }
-/* line 256, ..\themes\nazk_ui\less\parts.less */
+/* line 265, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal-dialog {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
 }
-/* line 264, ..\themes\nazk_ui\less\parts.less */
+/* line 273, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content {
   background-image: url(../images/popup.png);
   background-size: cover;
   min-height: 400px;
   border-bottom: #ebc308 6px solid;
 }
-/* line 270, ..\themes\nazk_ui\less\parts.less */
+/* line 279, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-header {
   border: none;
 }
-/* line 274, ..\themes\nazk_ui\less\parts.less */
+/* line 283, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body {
   padding: 28px;
   position: absolute;
@@ -9784,60 +9801,60 @@ img {
   width: 100%;
   transform: translateY(-50%);
 }
-/* line 282, ..\themes\nazk_ui\less\parts.less */
+/* line 291, ..\themes\nazk_ui\less\parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body p {
   color: white;
   line-height: normal;
   text-align: center;
 }
-/* line 294, ..\themes\nazk_ui\less\parts.less */
+/* line 303, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .views-field-title {
   padding: 20px 0 10px;
 }
-/* line 297, ..\themes\nazk_ui\less\parts.less */
+/* line 306, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .views-field-title a {
   color: black;
 }
-/* line 302, ..\themes\nazk_ui\less\parts.less */
+/* line 311, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_created {
   font-size: 12px;
   margin-bottom: 10px;
 }
-/* line 307, ..\themes\nazk_ui\less\parts.less */
+/* line 316, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_body {
   font-size: 17px;
   line-height: normal;
 }
-/* line 311, ..\themes\nazk_ui\less\parts.less */
+/* line 320, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_body .rtejustify {
   text-align: left;
 }
-/* line 317, ..\themes\nazk_ui\less\parts.less */
+/* line 326, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_created a {
   color: black;
   text-decoration: underline;
 }
-/* line 324, ..\themes\nazk_ui\less\parts.less */
+/* line 333, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap {
   background: #e9ebeb;
   border-bottom: #ebc308 60px solid;
 }
-/* line 328, ..\themes\nazk_ui\less\parts.less */
+/* line 337, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap .footer {
   border: none;
 }
-/* line 333, ..\themes\nazk_ui\less\parts.less */
+/* line 342, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu a {
   font-size: 12px;
   color: black;
   white-space: normal;
   padding-left: 0;
 }
-/* line 339, ..\themes\nazk_ui\less\parts.less */
+/* line 348, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu a .caret {
   display: none;
 }
-/* line 344, ..\themes\nazk_ui\less\parts.less */
+/* line 353, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu {
   display: block;
   position: static;
@@ -9849,26 +9866,26 @@ img {
   min-width: 0;
   width: 100%;
 }
-/* line 355, ..\themes\nazk_ui\less\parts.less */
+/* line 364, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu:after {
   display: none;
 }
-/* line 359, ..\themes\nazk_ui\less\parts.less */
+/* line 368, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu > .active > a {
   background: none;
   color: #7cbce3;
 }
-/* line 364, ..\themes\nazk_ui\less\parts.less */
+/* line 373, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu li {
   margin-bottom: 10px;
 }
-/* line 371, ..\themes\nazk_ui\less\parts.less */
+/* line 380, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu > ul > li > a {
   text-transform: uppercase;
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  /* line 376, ..\themes\nazk_ui\less\parts.less */
+  /* line 385, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9890,7 +9907,7 @@ img {
   }
 }
 @media (min-width: 992px) {
-  /* line 380, ..\themes\nazk_ui\less\parts.less */
+  /* line 389, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9912,7 +9929,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  /* line 384, ..\themes\nazk_ui\less\parts.less */
+  /* line 393, ..\themes\nazk_ui\less\parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9933,70 +9950,70 @@ img {
     float: left;
   }
 }
-/* line 391, ..\themes\nazk_ui\less\parts.less */
+/* line 400, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 {
   border-top: #b4b4b4 1px solid;
   margin-top: 40px;
   padding-top: 40px;
   font-size: 16px;
 }
-/* line 397, ..\themes\nazk_ui\less\parts.less */
+/* line 406, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 403, ..\themes\nazk_ui\less\parts.less */
+/* line 412, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul li {
   padding-right: 40px;
   text-align: center;
 }
-/* line 407, ..\themes\nazk_ui\less\parts.less */
+/* line 416, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul li a {
   color: #303030;
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 414, ..\themes\nazk_ui\less\parts.less */
+  /* line 423, ..\themes\nazk_ui\less\parts.less */
   #block-block-4 ul {
     display: table;
   }
-  /* line 417, ..\themes\nazk_ui\less\parts.less */
+  /* line 426, ..\themes\nazk_ui\less\parts.less */
   #block-block-4 ul li {
     display: table-cell;
   }
 }
 @media (min-width: 992px) {
-  /* line 426, ..\themes\nazk_ui\less\parts.less */
+  /* line 435, ..\themes\nazk_ui\less\parts.less */
   .pre-header .search-block {
     float: right;
     clear: right;
   }
 }
-/* line 431, ..\themes\nazk_ui\less\parts.less */
+/* line 440, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block #edit-type-wrapper,
 .pre-header .search-block #edit-created-wrapper,
 .pre-header .search-block #edit-created-1-wrapper,
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper label {
   display: none;
 }
-/* line 438, ..\themes\nazk_ui\less\parts.less */
+/* line 447, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper {
   padding-top: 0;
 }
 @media (min-width: 1200px) {
-  /* line 442, ..\themes\nazk_ui\less\parts.less */
+  /* line 451, ..\themes\nazk_ui\less\parts.less */
   .pre-header .search-block #edit-search-api-views-fulltext-wrapper input {
     max-width: 210px;
   }
 }
-/* line 448, ..\themes\nazk_ui\less\parts.less */
+/* line 457, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block .views-submit-button {
   margin-right: 0;
   padding: 0;
 }
-/* line 453, ..\themes\nazk_ui\less\parts.less */
+/* line 462, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block button {
   text-indent: -9999px;
   margin-top: 0 !important;
@@ -10005,35 +10022,35 @@ img {
   background: #7cbce3 url(../images/find.png) no-repeat center center;
   border-color: #7cbce3;
 }
-/* line 461, ..\themes\nazk_ui\less\parts.less */
+/* line 470, ..\themes\nazk_ui\less\parts.less */
 .pre-header .search-block button:hover {
   color: #ebc308;
 }
-/* line 469, ..\themes\nazk_ui\less\parts.less */
+/* line 478, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .form-item-created-date label,
 #block-views-exp-search-page .form-item-created-1-date label,
 #block-views-exp-search-page .form-item-created-date .help-block,
 #block-views-exp-search-page .form-item-created-1-date .help-block {
   display: none;
 }
-/* line 476, ..\themes\nazk_ui\less\parts.less */
+/* line 485, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created,
 #block-views-exp-search-page .views-submit-button {
   clear: left;
 }
-/* line 482, ..\themes\nazk_ui\less\parts.less */
+/* line 491, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item {
   margin-right: 0;
 }
-/* line 485, ..\themes\nazk_ui\less\parts.less */
+/* line 494, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item input {
   margin-right: 0;
 }
-/* line 491, ..\themes\nazk_ui\less\parts.less */
+/* line 500, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button {
   padding: 0;
 }
-/* line 494, ..\themes\nazk_ui\less\parts.less */
+/* line 503, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button button {
   text-indent: -9999px;
   height: 44px;
@@ -10042,16 +10059,16 @@ img {
   background: #7cbce3 url(../images/find.png) no-repeat center center;
   border-color: #7cbce3;
 }
-/* line 502, ..\themes\nazk_ui\less\parts.less */
+/* line 511, ..\themes\nazk_ui\less\parts.less */
 #block-views-exp-search-page .views-submit-button button:hover {
   color: #ebc308;
 }
-/* line 510, ..\themes\nazk_ui\less\parts.less */
+/* line 519, ..\themes\nazk_ui\less\parts.less */
 .webform-component--detali.webform-conditional-hidden ~ .form-actions {
   display: none;
 }
 @media (min-width: 1200px) {
-  /* line 516, ..\themes\nazk_ui\less\parts.less */
+  /* line 525, ..\themes\nazk_ui\less\parts.less */
   #block-block-5,
   #block-block-6 {
     position: relative;
@@ -10061,55 +10078,55 @@ img {
     float: left;
   }
 }
-/* line 525, ..\themes\nazk_ui\less\parts.less */
+/* line 534, ..\themes\nazk_ui\less\parts.less */
 #block-block-5 {
   padding-left: 20px;
   font-size: 14px;
   margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
-  /* line 526, ..\themes\nazk_ui\less\parts.less */
+  /* line 535, ..\themes\nazk_ui\less\parts.less */
   #block-block-5 {
     width: 60%;
   }
 }
-/* line 534, ..\themes\nazk_ui\less\parts.less */
+/* line 543, ..\themes\nazk_ui\less\parts.less */
 #block-block-5 img {
   max-width: 25px;
   margin-right: 20px;
 }
 @media (max-width: 991px) {
-  /* line 541, ..\themes\nazk_ui\less\parts.less */
+  /* line 550, ..\themes\nazk_ui\less\parts.less */
   #block-block-6 {
     padding-left: 20px;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 546, ..\themes\nazk_ui\less\parts.less */
+  /* line 555, ..\themes\nazk_ui\less\parts.less */
   #block-block-6 {
     text-align: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 550, ..\themes\nazk_ui\less\parts.less */
+  /* line 559, ..\themes\nazk_ui\less\parts.less */
   #block-block-6 {
     width: 40%;
   }
 }
-/* line 554, ..\themes\nazk_ui\less\parts.less */
+/* line 563, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .form-inline .form-control {
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
 }
-/* line 560, ..\themes\nazk_ui\less\parts.less */
+/* line 569, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 label {
   display: block;
   font-weight: 300;
   font-size: 14px;
 }
-/* line 566, ..\themes\nazk_ui\less\parts.less */
+/* line 575, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .button {
   height: 34px;
   box-sizing: border-box;
@@ -10119,36 +10136,41 @@ img {
   font-weight: 300;
   padding: 7px 30px;
 }
-/* line 575, ..\themes\nazk_ui\less\parts.less */
+/* line 584, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .button:hover {
   background-color: #ebc308;
   border-color: #ebc308;
   color: black;
 }
-/* line 583, ..\themes\nazk_ui\less\parts.less */
+/* line 592, ..\themes\nazk_ui\less\parts.less */
 #block-system-main-menu {
   clear: both;
 }
-/* line 587, ..\themes\nazk_ui\less\parts.less */
+/* line 595, ..\themes\nazk_ui\less\parts.less */
+#block-system-main-menu .nav > li > a:hover,
+#block-system-main-menu .nav > li > a:focus {
+  background: none;
+}
+/* line 601, ..\themes\nazk_ui\less\parts.less */
 #block-block-7,
 #block-block-8 {
   border-top: #b4b4b4 1px solid;
   margin-top: 80px;
   padding-top: 40px;
 }
-/* line 593, ..\themes\nazk_ui\less\parts.less */
+/* line 607, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 h2,
 #block-block-8 h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-/* line 598, ..\themes\nazk_ui\less\parts.less */
+/* line 612, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 ul,
 #block-block-8 ul {
   margin: 0;
   padding: 0;
 }
-/* line 603, ..\themes\nazk_ui\less\parts.less */
+/* line 617, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li,
 #block-block-8 li {
   list-style: none;
@@ -10157,7 +10179,7 @@ img {
   text-align: center;
   margin-right: 20px;
 }
-/* line 610, ..\themes\nazk_ui\less\parts.less */
+/* line 624, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li a,
 #block-block-8 li a {
   display: block;
@@ -10166,18 +10188,18 @@ img {
   font-size: 12px;
   color: black;
 }
-/* line 618, ..\themes\nazk_ui\less\parts.less */
+/* line 632, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li p a,
 #block-block-8 li p a {
   height: auto;
 }
-/* line 622, ..\themes\nazk_ui\less\parts.less */
+/* line 636, ..\themes\nazk_ui\less\parts.less */
 #block-block-7 li img,
 #block-block-8 li img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 629, ..\themes\nazk_ui\less\parts.less */
+/* line 643, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div {
   border: none;
   background: white;
@@ -10185,13 +10207,13 @@ img {
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
   transition: all ease-in-out 0.5s;
 }
-/* line 636, ..\themes\nazk_ui\less\parts.less */
+/* line 650, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-datepicker-header {
   border: none;
   background: #7cbce3;
   border-radius: 0;
 }
-/* line 642, ..\themes\nazk_ui\less\parts.less */
+/* line 656, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-state-default,
 #ui-datepicker-div .ui-widget-content .ui-state-default,
 #ui-datepicker-div .ui-widget-header .ui-state-default {
@@ -10199,24 +10221,24 @@ img {
   border: none;
   transition: all ease-in-out 0.3s;
 }
-/* line 649, ..\themes\nazk_ui\less\parts.less */
+/* line 663, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-content .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-header .ui-state-default:hover {
   background: #7cbce3;
   color: white;
 }
-/* line 655, ..\themes\nazk_ui\less\parts.less */
+/* line 669, ..\themes\nazk_ui\less\parts.less */
 #ui-datepicker-div .ui-datepicker-today a {
   background: #7cbce3;
   color: white;
 }
-/* line 662, ..\themes\nazk_ui\less\parts.less */
+/* line 676, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy {
   position: relative;
   margin: 40px auto 100px !important;
 }
-/* line 666, ..\themes\nazk_ui\less\parts.less */
+/* line 680, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li {
   border-radius: 100%;
   border: #7cbce3 1px solid;
@@ -10228,57 +10250,57 @@ img {
   right: auto;
   position: absolute;
 }
-/* line 677, ..\themes\nazk_ui\less\parts.less */
+/* line 691, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.empty {
   display: none !important;
 }
-/* line 681, ..\themes\nazk_ui\less\parts.less */
+/* line 695, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.next {
   right: 0;
   left: auto;
 }
-/* line 685, ..\themes\nazk_ui\less\parts.less */
+/* line 699, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy li.next .hover-popup:before {
   content: '\f30f';
 }
-/* line 691, ..\themes\nazk_ui\less\parts.less */
+/* line 705, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup {
   text-decoration: none;
   display: block;
 }
-/* line 695, ..\themes\nazk_ui\less\parts.less */
+/* line 709, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup span {
   display: none;
 }
-/* line 699, ..\themes\nazk_ui\less\parts.less */
+/* line 713, ..\themes\nazk_ui\less\parts.less */
 .region-content .flippy .hover-popup:before {
   content: '\f2ca';
   font-family: "Ionicons";
 }
-/* line 707, ..\themes\nazk_ui\less\parts.less */
+/* line 721, ..\themes\nazk_ui\less\parts.less */
 .popover {
   max-width: 600px;
   min-width: 200px;
 }
-/* line 711, ..\themes\nazk_ui\less\parts.less */
+/* line 725, ..\themes\nazk_ui\less\parts.less */
 .popover .popover-title {
   background: #7cbce3;
   color: white;
 }
-/* line 717, ..\themes\nazk_ui\less\parts.less */
+/* line 731, ..\themes\nazk_ui\less\parts.less */
 #switch-theme .standart-theme {
   display: none;
 }
-/* line 722, ..\themes\nazk_ui\less\parts.less */
+/* line 736, ..\themes\nazk_ui\less\parts.less */
 .contrast #switch-theme .standart-theme {
   display: list-item;
 }
-/* line 726, ..\themes\nazk_ui\less\parts.less */
+/* line 740, ..\themes\nazk_ui\less\parts.less */
 .contrast #switch-theme .contrast-theme {
   display: none;
 }
 @media (max-width: 991px) {
-  /* line 732, ..\themes\nazk_ui\less\parts.less */
+  /* line 746, ..\themes\nazk_ui\less\parts.less */
   .content_bottom_wrap {
     padding-bottom: 40px;
   }
@@ -10811,4 +10833,8 @@ img {
   .main-container .node-cover {
     display: none;
   }
+}
+/* line 59, ..\themes\nazk_ui\less\responsive.less */
+.modal-dialog {
+  width: 95%;
 }
