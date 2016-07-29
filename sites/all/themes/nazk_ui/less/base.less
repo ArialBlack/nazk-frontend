@@ -22,27 +22,29 @@
 
 html {
     height: 100%;
+    font-size: @basefontsize * 1px;
 }
 
 body {
+    .f("l");
+    font-size: 20px;
+    font-size: 1rem;
     background: @bg;
     font-family: 'Roboto', sans-serif;
-    .f("l");
     color: @text;
-    font-size: 20px;
-    line-height: 28px;
-}
+    line-height: 140%;
+} 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
     .f("l");
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-style: normal;
     
     &.page-header {
-        font-size: 50px;
+        .font-size(50);
         border: none;
         margin-bottom: 30px;
         margin-top: 30px;
@@ -75,7 +77,7 @@ img {
         border: #717273 1px solid;
         background: none;
         color: #717273;
-        font-size: 18px;
+        .font-size(18);
         .f("l");
         
         &:hover {
@@ -95,7 +97,7 @@ img {
     margin-top: 40px;
     
     a {
-        font-size: 16px;
+        .font-size(16);
         color: black;
         
         /*&:after {
@@ -127,7 +129,7 @@ img {
 
 .webform-component-file {
     .description {
-        font-size: 14px;
+        .font-size(14);
         mardin-top: 10px;
     }
 }
@@ -151,7 +153,7 @@ img {
             color: @nazk-blue;
             padding: 15px 25px;
             border: @nazk-blue 1px solid;
-            font-size: 16px;
+            .font-size(16);
             font-weight: bold;
             
             &:hover {
@@ -167,3 +169,12 @@ p.rtejustify {
     text-align: left;
 }
 
+.admin-only {
+    display: none;
+}
+
+.logged-in {
+    .admin-only {
+        display: block;
+    }
+}

@@ -21,7 +21,7 @@
         }
         
         a {
-            font-size: 16px;
+            .font-size(16);
             color: white;
             display: inline-block;
             width: 30px;
@@ -30,7 +30,7 @@
             background: @nazk-blue;
             margin-left: 10px;
             text-align: center;
-            line-height: 30px;
+            line-height: 136%;
             transform: scale(1,1);
             transition: all ease-in-out 0.1s;
             
@@ -46,9 +46,9 @@
         text-align: left;
         
         .ofsite {
-            font-size: 13px;
+            .font-size(13);
             text-transform: uppercase;
-            line-height: 32px;
+            line-height: 246%;
         }
         
         @media (min-width: @mbp) {
@@ -78,7 +78,7 @@
             span {
                 color: black;
                 font-weight: bold;
-                font-size: 12px;
+                .font-size(12);
                 text-transform: uppercase;
             }
         }
@@ -87,7 +87,7 @@
     .field-name-body {
         .f("m");
         font-style: italic;
-        font-size: 18px;
+        .font-size(18);
         
         &:after {
             .line();
@@ -121,11 +121,11 @@
         width: 100%;
         
         @media (min-width: 1200px) {
-            height: @cover-img-padding;
+            /*height: @cover-img-padding;*/
         }
             
         .node-cover {
-            height: @cover-img-padding;  
+            /*height: @cover-img-padding;*/  
         }
     }
     
@@ -144,7 +144,7 @@
         }
         
         h1.page-title {
-            font-size: 72px;
+            .font-size(72);
         }
         
         .field-name-body:after {
@@ -214,13 +214,13 @@
     
     h2 {
         .f("n");
-        font-size: 50px;
+        .font-size(50);
         text-transform: none;
     }
     
     .field-name-field-position {
         font-style: italic;
-        font-size: 30px;
+        .font-size(30);
         
         &:after {
             .line(2);
@@ -285,10 +285,10 @@
             padding: 60px 40px;
             
             p {
+                .f("l");
+                .font-size(18);
                 text-align: left;
                 color: black;
-                .f("l");
-                font-size: 18px;
                 font-style: normal;
                 position: relative;
                 
@@ -297,7 +297,7 @@
                     content: '"';
                     position: absolute;
                     display: block;
-                    font-size: 120px;
+                    .font-size(120);
                     color: white;
                     opacity: 0.5;
                     font-family: 'Roboto', sans-serif;
@@ -386,7 +386,7 @@
     }
     
     .tel {
-        font-size: 60px;
+        .font-size(60);
         line-height: 120%;
         margin-bottom: 80px;
         

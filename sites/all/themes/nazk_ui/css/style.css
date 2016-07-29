@@ -8535,7 +8535,8 @@ table.sticky-header {
 .help-block,
 .control-group .help-inline {
   color: #777777;
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   margin: 5px 0 10px;
   padding: 0;
 }
@@ -9184,86 +9185,91 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /* line 23, ..\themes\nazk_ui\less\base.less */
 html {
   height: 100%;
+  font-size: 20px;
 }
-/* line 27, ..\themes\nazk_ui\less\base.less */
+/* line 28, ..\themes\nazk_ui\less\base.less */
 body {
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1rem;
   background: #f8f8f8;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   color: #303030;
-  font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
 }
-/* line 36, ..\themes\nazk_ui\less\base.less */
+/* line 38, ..\themes\nazk_ui\less\base.less */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
-/* line 41, ..\themes\nazk_ui\less\base.less */
+/* line 43, ..\themes\nazk_ui\less\base.less */
 h1 {
   font-style: normal;
 }
-/* line 44, ..\themes\nazk_ui\less\base.less */
+/* line 46, ..\themes\nazk_ui\less\base.less */
 h1.page-header {
-  font-size: 50px;
+  font-size: 25px;
+  font-size: 2.5rem;
   border: none;
   margin-bottom: 30px;
   margin-top: 30px;
   padding-bottom: 0;
 }
-/* line 53, ..\themes\nazk_ui\less\base.less */
+/* line 55, ..\themes\nazk_ui\less\base.less */
 a {
   color: #7cbce3;
 }
-/* line 57, ..\themes\nazk_ui\less\base.less */
+/* line 59, ..\themes\nazk_ui\less\base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 61, ..\themes\nazk_ui\less\base.less */
+/* line 63, ..\themes\nazk_ui\less\base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 66, ..\themes\nazk_ui\less\base.less */
+/* line 68, ..\themes\nazk_ui\less\base.less */
 .btn {
   padding: 10px 30px;
   border-radius: 0;
 }
-/* line 70, ..\themes\nazk_ui\less\base.less */
+/* line 72, ..\themes\nazk_ui\less\base.less */
 .btn i {
   padding-right: 20px;
 }
-/* line 74, ..\themes\nazk_ui\less\base.less */
+/* line 76, ..\themes\nazk_ui\less\base.less */
 .btn.btn-outline {
   border: #717273 1px solid;
   background: none;
   color: #717273;
-  font-size: 18px;
+  font-size: 9px;
+  font-size: 0.9rem;
   font-weight: 300;
 }
-/* line 81, ..\themes\nazk_ui\less\base.less */
+/* line 83, ..\themes\nazk_ui\less\base.less */
 .btn.btn-outline:hover {
   color: white;
   background: #7cbce3;
   border: #7cbce3 1px solid;
 }
-/* line 89, ..\themes\nazk_ui\less\base.less */
+/* line 91, ..\themes\nazk_ui\less\base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 94, ..\themes\nazk_ui\less\base.less */
+/* line 96, ..\themes\nazk_ui\less\base.less */
 .field-name-field-files {
   margin-top: 40px;
 }
-/* line 97, ..\themes\nazk_ui\less\base.less */
+/* line 99, ..\themes\nazk_ui\less\base.less */
 .field-name-field-files a {
-  font-size: 16px;
+  font-size: 8px;
+  font-size: 0.8rem;
   color: black;
   /*&:after {
             content: '\f407';
@@ -9272,55 +9278,65 @@ img {
             font-size: 18px;
         }*/
 }
-/* line 110, ..\themes\nazk_ui\less\base.less */
+/* line 112, ..\themes\nazk_ui\less\base.less */
 .node form {
   margin-top: 80px;
 }
-/* line 116, ..\themes\nazk_ui\less\base.less */
+/* line 118, ..\themes\nazk_ui\less\base.less */
 .webform-client-form .form-item.form-group {
   margin-bottom: 80px;
 }
-/* line 121, ..\themes\nazk_ui\less\base.less */
+/* line 123, ..\themes\nazk_ui\less\base.less */
 .webform-client-form .form-item.form-type-radio label {
   font-weight: 300;
 }
-/* line 129, ..\themes\nazk_ui\less\base.less */
+/* line 131, ..\themes\nazk_ui\less\base.less */
 .webform-component-file .description {
-  font-size: 14px;
+  font-size: 7px;
+  font-size: 0.7rem;
   mardin-top: 10px;
 }
-/* line 135, ..\themes\nazk_ui\less\base.less */
+/* line 137, ..\themes\nazk_ui\less\base.less */
 .form-control.form-file {
   margin-bottom: 20px;
 }
-/* line 139, ..\themes\nazk_ui\less\base.less */
+/* line 141, ..\themes\nazk_ui\less\base.less */
 .panel-body > .form-item.form-group {
   margin-bottom: 40px;
 }
-/* line 144, ..\themes\nazk_ui\less\base.less */
+/* line 146, ..\themes\nazk_ui\less\base.less */
 .view .more-link {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-/* line 149, ..\themes\nazk_ui\less\base.less */
+/* line 151, ..\themes\nazk_ui\less\base.less */
 .view .more-link a {
   text-transform: uppercase;
   color: #7cbce3;
   padding: 15px 25px;
   border: #7cbce3 1px solid;
-  font-size: 16px;
+  font-size: 8px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
-/* line 157, ..\themes\nazk_ui\less\base.less */
+/* line 159, ..\themes\nazk_ui\less\base.less */
 .view .more-link a:hover {
   background: #7cbce3;
   color: white;
   text-decoration: none;
 }
-/* line 166, ..\themes\nazk_ui\less\base.less */
+/* line 168, ..\themes\nazk_ui\less\base.less */
 p.rtejustify {
   text-align: left;
+}
+/* line 172, ..\themes\nazk_ui\less\base.less */
+.admin-only {
+  display: none;
+}
+/* line 177, ..\themes\nazk_ui\less\base.less */
+.logged-in .admin-only {
+  display: block;
 }
 @media (min-width: 768px) {
   /* line 6, ..\themes\nazk_ui\less\grid.less */
@@ -9409,7 +9425,8 @@ p.rtejustify {
 /* line 32, ..\themes\nazk_ui\less\navs.less */
 #navbar .dropdown-menu li a {
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
 }
 /* line 39, ..\themes\nazk_ui\less\navs.less */
 #navbar .dropdown-submenu > .dropdown-menu {
@@ -9418,7 +9435,8 @@ p.rtejustify {
 /* line 44, ..\themes\nazk_ui\less\navs.less */
 #navbar li a {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 7px;
+  font-size: 0.7rem;
   color: black;
   padding: 15px;
   border: none;
@@ -9523,7 +9541,8 @@ p.rtejustify {
 #sideblocks .sblock p {
   font-weight: 400;
   text-align: center;
-  font-size: 18px;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 /* line 30, ..\themes\nazk_ui\less\parts.less */
 #sideblocks .sblock p a,
@@ -9569,7 +9588,8 @@ p.rtejustify {
 #sideblocks .side-button a i {
   background: #f8e64e;
   color: #2c2822;
-  font-size: 30px;
+  font-size: 15px;
+  font-size: 1.5rem;
   width: 70px;
   height: 110px;
   padding: 40px 25px;
@@ -9579,11 +9599,12 @@ p.rtejustify {
 #sideblocks .side-button a .holder {
   padding: 0 25px;
   color: white;
-  font-size: 22px;
+  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 400;
   height: 110px;
   box-sizing: border-box;
-  line-height: 30px;
+  line-height: 136%;
   vertical-align: top;
   position: relative;
   margin-left: 20px;
@@ -9653,12 +9674,14 @@ p.rtejustify {
 #block-views-news-block-1 .views-field-nothing .field_title a,
 #block-views-news-block-3 .views-field-nothing .field_title a {
   color: black;
-  font-size: 24px;
+  font-size: 12px;
+  font-size: 1.2rem;
 }
 /* line 146, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-1 .views-field-nothing .field_created,
 #block-views-news-block-3 .views-field-nothing .field_created {
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   margin-bottom: 10px;
 }
 /* line 152, ..\themes\nazk_ui\less\parts.less */
@@ -9732,25 +9755,29 @@ p.rtejustify {
 /* line 218, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .media-heading,
 .view-team #views-bootstrap-media-1 .media .media-heading {
-  font-size: 36px;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 /* line 222, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_created,
 .view-team #views-bootstrap-media-1 .media .field_created {
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   padding: 10px 0;
 }
 /* line 227, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_body,
 .view-team #views-bootstrap-media-1 .media .field_body {
-  font-size: 16px;
+  font-size: 8px;
+  font-size: 0.8rem;
   line-height: normal;
   margin-bottom: 20px;
 }
 /* line 233, ..\themes\nazk_ui\less\parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link,
 .view-team #views-bootstrap-media-1 .media .field_link {
-  font-size: 18px;
+  font-size: 9px;
+  font-size: 0.9rem;
   text-align: right;
 }
 /* line 237, ..\themes\nazk_ui\less\parts.less */
@@ -9817,12 +9844,14 @@ p.rtejustify {
 }
 /* line 311, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_created {
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   margin-bottom: 10px;
 }
 /* line 316, ..\themes\nazk_ui\less\parts.less */
 #block-views-news-block-4 .field_body {
-  font-size: 17px;
+  font-size: 8.5px;
+  font-size: 0.85rem;
   line-height: normal;
 }
 /* line 320, ..\themes\nazk_ui\less\parts.less */
@@ -9845,7 +9874,8 @@ p.rtejustify {
 }
 /* line 342, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu a {
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   color: black;
   white-space: normal;
   padding-left: 0;
@@ -9882,7 +9912,8 @@ p.rtejustify {
 /* line 380, ..\themes\nazk_ui\less\parts.less */
 .footer_wrap #block-system-main-menu > ul > li > a {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 7px;
+  font-size: 0.7rem;
 }
 @media (min-width: 768px) {
   /* line 385, ..\themes\nazk_ui\less\parts.less */
@@ -9955,7 +9986,8 @@ p.rtejustify {
   border-top: #b4b4b4 1px solid;
   margin-top: 40px;
   padding-top: 40px;
-  font-size: 16px;
+  font-size: 8px;
+  font-size: 0.8rem;
 }
 /* line 406, ..\themes\nazk_ui\less\parts.less */
 #block-block-4 ul {
@@ -10081,7 +10113,8 @@ p.rtejustify {
 /* line 534, ..\themes\nazk_ui\less\parts.less */
 #block-block-5 {
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 7px;
+  font-size: 0.7rem;
   margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
@@ -10124,7 +10157,8 @@ p.rtejustify {
 #block-block-6 label {
   display: block;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 7px;
+  font-size: 0.7rem;
 }
 /* line 575, ..\themes\nazk_ui\less\parts.less */
 #block-block-6 .button {
@@ -10185,7 +10219,8 @@ p.rtejustify {
   display: block;
   width: 130px;
   height: 150px;
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   color: black;
 }
 /* line 632, ..\themes\nazk_ui\less\parts.less */
@@ -10333,7 +10368,8 @@ p.rtejustify {
 }
 /* line 23, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .social-links a {
-  font-size: 16px;
+  font-size: 8px;
+  font-size: 0.8rem;
   color: white;
   display: inline-block;
   width: 30px;
@@ -10342,7 +10378,7 @@ p.rtejustify {
   background: #7cbce3;
   margin-left: 10px;
   text-align: center;
-  line-height: 30px;
+  line-height: 136%;
   transform: scale(1, 1);
   transition: all ease-in-out 0.1s;
 }
@@ -10358,9 +10394,10 @@ p.rtejustify {
 }
 /* line 48, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .lang-switch .ofsite {
-  font-size: 13px;
+  font-size: 6.5px;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  line-height: 32px;
+  line-height: 246%;
 }
 @media (min-width: 992px) {
   /* line 54, ..\themes\nazk_ui\less\pages.less */
@@ -10393,14 +10430,16 @@ p.rtejustify {
 .node-news-intro .lang-switch li span {
   color: black;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 6px;
+  font-size: 0.6rem;
   text-transform: uppercase;
 }
 /* line 87, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .field-name-body {
   font-weight: 500;
   font-style: italic;
-  font-size: 18px;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 /* line 92, ..\themes\nazk_ui\less\pages.less */
 .node-news-intro .field-name-body:after {
@@ -10439,12 +10478,12 @@ p.rtejustify {
 @media (min-width: 1200px) {
   /* line 123, ..\themes\nazk_ui\less\pages.less */
   .page-node.node-type-newspage .node-news-intro {
-    height: 670px;
+    /*height: @cover-img-padding;*/
   }
 }
 /* line 127, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-newspage .node-news-intro .node-cover {
-  height: 670px;
+  /*height: @cover-img-padding;*/
 }
 /* line 132, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-newspage .main-container {
@@ -10459,7 +10498,8 @@ p.rtejustify {
 }
 /* line 146, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage .node-news-intro h1.page-title {
-  font-size: 72px;
+  font-size: 36px;
+  font-size: 3.6rem;
 }
 /* line 150, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-basicpage .node-news-intro .field-name-body:after {
@@ -10529,13 +10569,15 @@ p.rtejustify {
 /* line 215, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember h2 {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 25px;
+  font-size: 2.5rem;
   text-transform: none;
 }
 /* line 221, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .field-name-field-position {
   font-style: italic;
-  font-size: 30px;
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 /* line 225, ..\themes\nazk_ui\less\pages.less */
 .page-node.node-type-teammember .field-name-field-position:after {
@@ -10602,10 +10644,11 @@ p.rtejustify {
 }
 /* line 287, ..\themes\nazk_ui\less\pages.less */
 .front #frontquoute .field-name-body p {
+  font-weight: 300;
+  font-size: 9px;
+  font-size: 0.9rem;
   text-align: left;
   color: black;
-  font-weight: 300;
-  font-size: 18px;
   font-style: normal;
   position: relative;
 }
@@ -10615,7 +10658,8 @@ p.rtejustify {
   content: '"';
   position: absolute;
   display: block;
-  font-size: 120px;
+  font-size: 60px;
+  font-size: 6rem;
   color: white;
   opacity: 0.5;
   font-family: 'Roboto', sans-serif;
@@ -10699,7 +10743,8 @@ p.rtejustify {
 /* line 388, ..\themes\nazk_ui\less\pages.less */
 .page-node-76 .tel,
 .page-node-77 .tel {
-  font-size: 60px;
+  font-size: 30px;
+  font-size: 3rem;
   line-height: 120%;
   margin-bottom: 80px;
 }
