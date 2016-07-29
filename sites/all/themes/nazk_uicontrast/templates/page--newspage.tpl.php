@@ -90,6 +90,23 @@
     } else $img_url = "";
 ?>
 
+<div class="disabled-help">
+    <div class="container">
+        <div class="row">
+            <div class="font-help col-sm-6">
+                <div class="fontdown"><button class="btn btn-default"id="down">A -</button></div>
+                <div class="fontup"><button class="btn btn-default" id="up">A +</button></div>
+            </div>
+              
+            <div class="col-sm-6">
+                <a class="btn btn-default btn-transparent for-disabled" href="/?theme=nazk_ui">
+                    <i class="icon ion-eye"></i><span><?php print t("Normal version of the site"); ?></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="node-news-intro">
     <div class="node-cover" 
     <?php if (strlen($img_url) > 0): ?>
@@ -122,14 +139,8 @@
                         print render($block['content']);
                     ?>
                 </div>
-                
-                <div class="social-links pull-right">
-                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
-                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
-                    <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i></a>
-                    <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i></a>
-                    <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i></a>
-                </div>     
+               
+                   
 
             </div>
         </div>
@@ -163,13 +174,7 @@
                     ?>
                 </div>
                 
-                <div class="social-links">
-                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
-                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
-                    <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i></a>
-                    <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i></a>
-                    <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i></a>
-                </div>   
+  
                 
                 
                       <?php if (!empty($secondary_nav)): ?>
@@ -257,7 +262,7 @@
           
                         <div class="node-cover" 
     <?php if (strlen($img_url) > 0): ?>
-         style="background-image: url('<?php print image_style_url("cover", $img_url) ?>')"
+         style="background-image: url('<?php print image_style_url("covercontrast", $img_url) ?>')"
     <?php endif; ?>
     ></div>
     

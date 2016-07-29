@@ -94,6 +94,20 @@
             
             $(".i18n-uk #edit-search-api-views-fulltext").attr("placeholder", "Пошук...");
             //$("#block-views-exp-search-page .form-item-created-date input, #block-views-exp-search-page .form-item-created-1-date input").attr("placeholder", "03.07.2016");
+            
+            var html = document.documentElement;
+            var startSize =  parseInt(getComputedStyle(html, '').fontSize);
+            
+            up.onclick = function() {
+              html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) + 2 + 'px';
+            };
+            down.onclick = function() {
+              var currentSize = parseInt(getComputedStyle(html, '').fontSize);
+              if (currentSize >= startSize + 2) {
+                  html.style.fontSize = currentSize - 2 + 'px';
+              }
+            };
+
         });
 
         $(window).on('resize', function() {

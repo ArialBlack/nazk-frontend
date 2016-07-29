@@ -432,9 +432,21 @@
 
 .pre-header {
     .search-block {
+        text-align: left;
+        width: 100%;
+        
+        @media (min-width: 335px) {
+            max-width: 335px;
+        }
+        
         @media (min-width: 992px) {
             float: right;
             clear: right;
+        }
+        
+        .views-exposed-widgets {
+            position: relative;
+
         }
         
         #edit-type-wrapper,
@@ -445,11 +457,12 @@
         }
         
         #edit-search-api-views-fulltext-wrapper {
-            padding-top: 0;
+            padding: 0 62px 0 0;
             
             input {
+                
                 @media (min-width: 1200px) {
-                    max-width: 210px;
+                    
                 }
             }
         }
@@ -457,6 +470,8 @@
         .views-submit-button {
             margin-right: 0;
             padding: 0;
+            position: absolute;
+            right: 0;
         }
         
         button {
@@ -538,7 +553,7 @@
     
     padding-left: 20px;
     .font-size(14);
-    margin-bottom:40px;
+    margin-bottom: 20px;
     
     img {
         max-width: 25px;
@@ -745,5 +760,59 @@
 .content_bottom_wrap {
     @media (max-width: 991px) {
         padding-bottom: 40px;
+    }
+}
+
+#block-block-10 {
+    clear: both;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+    .social-links {
+        text-align: left;
+
+        a {
+            .font-size(16);
+            color: white;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: @nazk-blue;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 30px;
+            transform: scale(1,1);
+            transition: all ease-in-out 0.1s;
+            
+            &:hover {
+                transform: scale(1.2,1.2);
+                background: @nazk-yellow;
+            }
+        }
+    }
+}
+
+.btn.for-disabled {
+    padding: 0 30px;
+    margin-bottom: 20px;
+    width: 100%;
+            
+    @media (min-width: 992px) {
+        margin-bottom: 0;
+    }
+            
+    i {
+        .font-size(40);
+        line-height: 1;
+    }
+            
+    i, span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+            
+    span {
+        white-space: normal;
     }
 }

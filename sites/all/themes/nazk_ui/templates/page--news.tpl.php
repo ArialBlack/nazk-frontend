@@ -138,15 +138,12 @@
                         $block = module_invoke('views', 'block_view', '-exp-search-page');
                         print render($block['content']);
                     ?>
+                    <a class="btn btn-default btn-transparent for-disabled" href="/?theme=nazk_uicontrast">
+                        <i class="icon ion-eye"></i><span><?php print t("For the visually impaired"); ?></span>
+                    </a>  
                 </div>
                               
-                <div class="social-links pull-right">
-                    <a href="https://www.facebook.com/NAZKgov/?fref=ts"><i class="icon ion-social-facebook"></i></a>
-                    <a href="https://twitter.com/NAZK_gov"><i class="icon ion-social-twitter"></i></a>
-                    <a href="https://www.instagram.com/nazk_gov/"><i class="icon ion-social-instagram-outline"></i></a>
-                    <a href="https://www.youtube.com/channel/UCKwoUDbscWm4BT7BoBo0kMg\"><i class="icon ion-social-youtube-outline"></i></a>
-                    <a href="https://plus.google.com/u/0/104801978277750249587/about"><i class="icon ion-social-googleplus"></i></a>
-                </div>
+                
             </div>
         </div>
         

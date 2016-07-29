@@ -75,21 +75,9 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
-  <h2>!!! ТЕСТУВАННЯ КОНТРАСТНОЇ СХЕМИ !!!</h2>
-  <div class="admin-only"><button id="up">+</button></div>
-  <div class="admin-only"><button id="down">-</button></div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <span id="bpMArker"></span>
-  <script>
-var html = document.documentElement;
-up.onclick = function() {
-  html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) + 2 + 'px';
-};
-down.onclick = function() {
-  html.style.fontSize = parseInt(getComputedStyle(html, '').fontSize) - 2 + 'px';
-};
-</script>
 </body>
 </html>
