@@ -8977,10 +8977,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 24rem;
 }
 /* line 841, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
-.dropdown-submenu {
-  position: relative;
-}
-/* line 842, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -8988,11 +8984,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin-left: -1px;
   border-radius: 0;
 }
-/* line 843, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 842, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
-/* line 844, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 843, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -9006,23 +9002,37 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin-top: 5px;
   margin-right: -10px;
 }
-/* line 845, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 844, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
-/* line 846, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 845, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu.pull-left {
   float: none;
 }
-/* line 847, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 846, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
   border-radius: 6px 0 6px 6px;
 }
-/* line 849, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+/* line 848, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+.dropdown-submenu {
+  position: relative;
+}
+/* line 851, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
 .dropdown-submenu > a:after {
   border-left-color: white;
+}
+@media (max-width: 1199px) {
+  /* line 856, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+  .dropdown-submenu > a:after {
+    display: none;
+  }
+  /* line 860, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/overrides.less */
+  .dropdown-submenu .dropdown-menu {
+    display: block;
+  }
 }
 /* line 1, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/base.less */
 #bpMArker {
@@ -9211,6 +9221,14 @@ p.rtejustify {
   color: white;
   border-color: black;
 }
+/* line 192, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/base.less */
+.breadcrumb {
+  font-size: 7px;
+  font-size: 0.7rem;
+  background: none;
+  padding: 0;
+  margin-top: -5px;
+}
 @media (min-width: 768px) {
   /* line 6, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/grid.less */
   .container {
@@ -9293,17 +9311,22 @@ p.rtejustify {
   border-radius: 0;
   box-shadow: 0px 40px 0px 0px rgba(0, 0, 0, 0.03);
 }
-/* line 32, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 30, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+#navbar .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 37, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .dropdown-menu li a {
   padding: 10px 20px;
   font-size: 6px;
   font-size: 0.6rem;
 }
-/* line 39, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 44, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .dropdown-submenu > .dropdown-menu {
   background: rgba(0, 0, 0, 0.85);
 }
-/* line 44, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 49, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar li a {
   font-weight: 400;
   font-size: 7px;
@@ -9312,21 +9335,21 @@ p.rtejustify {
   padding: 15px;
   border: none;
 }
-/* line 51, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 56, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar li a.active {
   font-weight: 700;
   color: black;
   text-decoration: none;
   background: none;
 }
-/* line 60, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 65, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-nav > .open > a,
 #navbar .navbar-nav > .open > a:hover,
 #navbar .navbar-nav > .open > a:focus {
   background: black;
   color: white;
 }
-/* line 66, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 71, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu {
@@ -9334,47 +9357,47 @@ p.rtejustify {
   border: none;
   border-radius: 0px;
 }
-/* line 71, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 76, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu a,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu a,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu a {
   color: black;
   padding: 10px 20px;
 }
-/* line 75, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 80, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-nav > .open > a + .dropdown-menu a:hover,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu a:hover,
 #navbar .navbar-nav > .open > a:focus + .dropdown-menu a:hover {
   background: #ebc308;
 }
-/* line 82, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 87, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-toggle {
   border: white;
 }
-/* line 85, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 90, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-toggle .icon-bar {
   background: white;
 }
-/* line 89, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 94, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .navbar-toggle:hover {
   background: black;
 }
-/* line 95, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 100, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .menu.navbar-nav .last.dropdown .dropdown-menu a {
   white-space: normal;
 }
-/* line 100, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 105, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .language-switcher-locale-url {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 104, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 109, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .language-switcher-locale-url li {
   margin-left: 0;
   padding-left: 0;
   margin-right: 15px;
 }
-/* line 110, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
+/* line 115, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/navs.less */
 #navbar .language-switcher-locale-url a {
   padding: 0;
 }
@@ -9514,74 +9537,76 @@ p.rtejustify {
   padding-right: 40px;
   margin-bottom: 40px;
 }
-/* line 121, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
-#block-views-news-block-1 .col:last-child,
-#block-views-news-block-3 .col:last-child {
-  padding-left: 40px;
+@media (min-width: 1200px) {
+  /* line 122, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  #block-views-news-block-1 .col:last-child,
+  #block-views-news-block-3 .col:last-child {
+    padding-left: 40px;
+  }
 }
-/* line 125, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 127, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .col,
 #block-views-news-block-3 .col {
   position: relative;
 }
-/* line 128, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 130, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .col img,
 #block-views-news-block-3 .col img {
   width: 100%;
   height: auto;
 }
-/* line 134, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 136, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing,
 #block-views-news-block-3 .views-field-nothing {
   padding: 30px 0 0 0;
 }
-/* line 137, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 139, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title,
 #block-views-news-block-3 .views-field-nothing .field_title {
   margin-bottom: 10px;
 }
-/* line 140, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 142, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_title a,
 #block-views-news-block-3 .views-field-nothing .field_title a {
   color: black;
   font-size: 12px;
   font-size: 1.2rem;
 }
-/* line 146, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 148, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_created,
 #block-views-news-block-3 .views-field-nothing .field_created {
   font-size: 6px;
   font-size: 0.6rem;
   margin-bottom: 10px;
 }
-/* line 152, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 154, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a,
 #block-views-news-block-3 .views-field-nothing .field_link a {
   color: black;
 }
-/* line 155, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 157, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a span,
 #block-views-news-block-3 .views-field-nothing .field_link a span {
   text-decoration: underline;
 }
-/* line 159, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 161, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-1 .views-field-nothing .field_link a:hover,
 #block-views-news-block-3 .views-field-nothing .field_link a:hover {
   text-decoration: none;
 }
 @media (min-width: 1200px) {
-  /* line 168, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 170, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .front #block-views-news-block-3 {
     margin-top: -68px;
   }
 }
-/* line 172, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 174, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .front #block-views-news-block-3 h2 {
   margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  /* line 176, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 178, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .front #block-views-news-block-3 h2 {
     display: block;
     background: url(../images/folder.png) no-repeat center center;
@@ -9590,13 +9615,13 @@ p.rtejustify {
     margin-bottom: 80px;
   }
 }
-/* line 190, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 192, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media,
 .view-team #views-bootstrap-media-1 .media {
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
-/* line 194, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 196, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media:after,
 .view-team #views-bootstrap-media-1 .media:after {
   content: '';
@@ -9606,36 +9631,36 @@ p.rtejustify {
   background: black;
   margin-top: 50px;
 }
-/* line 204, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 206, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media:last-child:after,
 .view-team #views-bootstrap-media-1 .media:last-child:after {
   display: none;
 }
-/* line 209, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 211, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media a,
 .view-team #views-bootstrap-media-1 .media a {
   color: black;
 }
-/* line 213, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 215, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .pull-left,
 .view-team #views-bootstrap-media-1 .media .pull-left {
   padding-right: 60px;
   max-width: 400px;
 }
-/* line 218, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 220, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .media-heading,
 .view-team #views-bootstrap-media-1 .media .media-heading {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 222, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 224, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .field_created,
 .view-team #views-bootstrap-media-1 .media .field_created {
   font-size: 6px;
   font-size: 0.6rem;
   padding: 10px 0;
 }
-/* line 227, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 229, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .field_body,
 .view-team #views-bootstrap-media-1 .media .field_body {
   font-size: 8px;
@@ -9643,28 +9668,28 @@ p.rtejustify {
   line-height: normal;
   margin-bottom: 20px;
 }
-/* line 233, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 235, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link,
 .view-team #views-bootstrap-media-1 .media .field_link {
   font-size: 9px;
   font-size: 0.9rem;
   text-align: right;
 }
-/* line 237, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 239, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-news #views-bootstrap-media-1 .media .field_link span,
 .view-team #views-bootstrap-media-1 .media .field_link span {
   text-decoration: underline;
 }
-/* line 245, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 247, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .view-team #views-bootstrap-media-1 .field-position {
   padding: 20px 0;
 }
-/* line 252, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 254, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal {
   text-align: center;
   padding: 0!important;
 }
-/* line 257, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 259, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal:before {
   content: '';
   display: inline-block;
@@ -9672,24 +9697,24 @@ p.rtejustify {
   vertical-align: middle;
   margin-right: -4px;
 }
-/* line 265, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 267, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal-dialog {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
 }
-/* line 273, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 275, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal .modal-dialog .modal-content {
   background-image: url(../images/popup.png);
   background-size: cover;
   min-height: 400px;
   border-bottom: black 6px solid;
 }
-/* line 279, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 281, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-header {
   border: none;
 }
-/* line 283, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 285, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body {
   padding: 28px;
   position: absolute;
@@ -9699,51 +9724,51 @@ p.rtejustify {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-/* line 291, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 293, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-2 .modal .modal-dialog .modal-content .modal-body p {
   color: white;
   line-height: normal;
   text-align: center;
 }
-/* line 303, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 305, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .views-field-title {
   padding: 20px 0 10px;
 }
-/* line 306, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 308, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .views-field-title a {
   color: black;
 }
-/* line 311, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 313, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .field_created {
   font-size: 6px;
   font-size: 0.6rem;
   margin-bottom: 10px;
 }
-/* line 316, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 318, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .field_body {
   font-size: 8.5px;
   font-size: 0.85rem;
   line-height: normal;
 }
-/* line 320, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 322, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .field_body .rtejustify {
   text-align: left;
 }
-/* line 326, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 328, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-news-block-4 .field_created a {
   color: black;
   text-decoration: underline;
 }
-/* line 333, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 335, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap {
   background: #e9ebeb;
   border-bottom: black 60px solid;
 }
-/* line 337, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 339, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap .footer {
   border: none;
 }
-/* line 342, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 344, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu a {
   font-size: 6px;
   font-size: 0.6rem;
@@ -9751,11 +9776,11 @@ p.rtejustify {
   white-space: normal;
   padding-left: 0;
 }
-/* line 348, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 350, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu a .caret {
   display: none;
 }
-/* line 353, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 355, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu {
   display: block;
   position: static;
@@ -9767,27 +9792,27 @@ p.rtejustify {
   min-width: 0;
   width: 100%;
 }
-/* line 364, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 366, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu:after {
   display: none;
 }
-/* line 368, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 370, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu > .active > a {
   background: none;
   color: black;
 }
-/* line 373, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 375, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu .dropdown-menu li {
   margin-bottom: 10px;
 }
-/* line 380, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 382, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .footer_wrap #block-system-main-menu > ul > li > a {
   text-transform: uppercase;
   font-size: 7px;
   font-size: 0.7rem;
 }
 @media (min-width: 768px) {
-  /* line 385, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 387, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9809,7 +9834,7 @@ p.rtejustify {
   }
 }
 @media (min-width: 992px) {
-  /* line 389, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 391, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9831,7 +9856,7 @@ p.rtejustify {
   }
 }
 @media (min-width: 1200px) {
-  /* line 393, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 395, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .footer_wrap #block-system-main-menu > ul > li {
     position: relative;
     min-height: 1px;
@@ -9852,7 +9877,7 @@ p.rtejustify {
     float: left;
   }
 }
-/* line 400, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 402, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-4 {
   border-top: #b4b4b4 1px solid;
   margin-top: 40px;
@@ -9860,74 +9885,74 @@ p.rtejustify {
   font-size: 8px;
   font-size: 0.8rem;
 }
-/* line 406, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 408, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-4 ul {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 412, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 414, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-4 ul li {
   padding-right: 40px;
   text-align: center;
 }
-/* line 416, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 418, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-4 ul li a {
   color: #303030;
   text-decoration: none;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 423, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 425, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-4 ul {
     display: table;
   }
-  /* line 426, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 428, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-4 ul li {
     display: table-cell;
   }
 }
-/* line 434, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 436, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block {
   text-align: left;
   width: 100%;
 }
 @media (min-width: 335px) {
-  /* line 438, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 440, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .pre-header .search-block {
     max-width: 335px;
   }
 }
 @media (min-width: 992px) {
-  /* line 442, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 444, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .pre-header .search-block {
     float: right;
     clear: right;
   }
 }
-/* line 447, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 449, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block .views-exposed-widgets {
   position: relative;
 }
-/* line 452, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 454, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block #edit-type-wrapper,
 .pre-header .search-block #edit-created-wrapper,
 .pre-header .search-block #edit-created-1-wrapper,
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper label {
   display: none;
 }
-/* line 459, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 461, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block #edit-search-api-views-fulltext-wrapper {
   padding: 0 62px 0 0;
 }
-/* line 470, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 472, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block .views-submit-button {
   margin-right: 0;
   padding: 0;
   position: absolute;
   right: 0;
 }
-/* line 477, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 479, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block button {
   text-indent: -9999px;
   margin-top: 0 !important;
@@ -9936,35 +9961,35 @@ p.rtejustify {
   background: black url(../images/find.png) no-repeat center center;
   border-color: black;
 }
-/* line 485, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 487, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .pre-header .search-block button:hover {
   color: black;
 }
-/* line 493, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 495, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .form-item-created-date label,
 #block-views-exp-search-page .form-item-created-1-date label,
 #block-views-exp-search-page .form-item-created-date .help-block,
 #block-views-exp-search-page .form-item-created-1-date .help-block {
   display: none;
 }
-/* line 500, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 502, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-widget-filter-created,
 #block-views-exp-search-page .views-submit-button {
   clear: left;
 }
-/* line 506, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 508, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item {
   margin-right: 0;
 }
-/* line 509, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 511, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-widget-filter-created .container-inline-date > .form-item input {
   margin-right: 0;
 }
-/* line 515, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 517, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-submit-button {
   padding: 0;
 }
-/* line 518, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 520, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-submit-button button {
   text-indent: -9999px;
   height: 44px;
@@ -9973,16 +9998,16 @@ p.rtejustify {
   background: black url(../images/find.png) no-repeat center center;
   border-color: black;
 }
-/* line 526, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 528, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-views-exp-search-page .views-submit-button button:hover {
   color: black;
 }
-/* line 534, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 536, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .webform-component--detali.webform-conditional-hidden ~ .form-actions {
   display: none;
 }
 @media (min-width: 1200px) {
-  /* line 540, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 542, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-5,
   #block-block-6 {
     position: relative;
@@ -9992,7 +10017,7 @@ p.rtejustify {
     float: left;
   }
 }
-/* line 549, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 551, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-5 {
   padding-left: 20px;
   font-size: 7px;
@@ -10000,49 +10025,49 @@ p.rtejustify {
   margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
-  /* line 550, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 552, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-5 {
     width: 60%;
   }
 }
-/* line 558, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 560, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-5 img {
   max-width: 25px;
   margin-right: 20px;
 }
 @media (max-width: 991px) {
-  /* line 565, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 567, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-6 {
     padding-left: 20px;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
-  /* line 570, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 572, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-6 {
     text-align: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 574, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 576, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   #block-block-6 {
     width: 40%;
   }
 }
-/* line 578, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 580, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-6 .form-inline .form-control {
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
 }
-/* line 584, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 586, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-6 label {
   display: block;
   font-weight: 300;
   font-size: 7px;
   font-size: 0.7rem;
 }
-/* line 590, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 592, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-6 .button {
   height: 34px;
   box-sizing: border-box;
@@ -10052,41 +10077,41 @@ p.rtejustify {
   font-weight: 300;
   padding: 7px 30px;
 }
-/* line 599, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 601, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-6 .button:hover {
   background-color: black;
   border-color: black;
   color: black;
 }
-/* line 607, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 609, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-system-main-menu {
   clear: both;
 }
-/* line 610, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 612, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-system-main-menu .nav > li > a:hover,
 #block-system-main-menu .nav > li > a:focus {
   background: none;
 }
-/* line 616, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 618, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7,
 #block-block-8 {
   border-top: #b4b4b4 1px solid;
   margin-top: 80px;
   padding-top: 40px;
 }
-/* line 622, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 624, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 h2,
 #block-block-8 h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-/* line 627, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 629, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 ul,
 #block-block-8 ul {
   margin: 0;
   padding: 0;
 }
-/* line 632, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 634, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 li,
 #block-block-8 li {
   list-style: none;
@@ -10095,7 +10120,7 @@ p.rtejustify {
   text-align: center;
   margin-right: 20px;
 }
-/* line 639, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 641, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 li a,
 #block-block-8 li a {
   display: block;
@@ -10105,18 +10130,18 @@ p.rtejustify {
   font-size: 0.6rem;
   color: black;
 }
-/* line 647, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 649, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 li p a,
 #block-block-8 li p a {
   height: auto;
 }
-/* line 651, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 653, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-7 li img,
 #block-block-8 li img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 658, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 660, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #ui-datepicker-div {
   border: none;
   background: white;
@@ -10124,13 +10149,13 @@ p.rtejustify {
   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.75);
   transition: all ease-in-out 0.5s;
 }
-/* line 665, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 667, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #ui-datepicker-div .ui-datepicker-header {
   border: none;
   background: black;
   border-radius: 0;
 }
-/* line 671, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 673, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #ui-datepicker-div .ui-state-default,
 #ui-datepicker-div .ui-widget-content .ui-state-default,
 #ui-datepicker-div .ui-widget-header .ui-state-default {
@@ -10138,24 +10163,24 @@ p.rtejustify {
   border: none;
   transition: all ease-in-out 0.3s;
 }
-/* line 678, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 680, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #ui-datepicker-div .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-content .ui-state-default:hover,
 #ui-datepicker-div .ui-widget-header .ui-state-default:hover {
   background: black;
   color: white;
 }
-/* line 684, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 686, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #ui-datepicker-div .ui-datepicker-today a {
   background: black;
   color: white;
 }
-/* line 691, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 693, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy {
   position: relative;
   margin: 40px auto 100px !important;
 }
-/* line 695, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 697, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy li {
   border-radius: 100%;
   border: black 1px solid;
@@ -10167,72 +10192,72 @@ p.rtejustify {
   right: auto;
   position: absolute;
 }
-/* line 706, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 708, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy li.empty {
   display: none !important;
 }
-/* line 710, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 712, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy li.next {
   right: 0;
   left: auto;
 }
-/* line 714, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 716, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy li.next .hover-popup:before {
   content: '\f30f';
 }
-/* line 720, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 722, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy .hover-popup {
   text-decoration: none;
   display: block;
 }
-/* line 724, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 726, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy .hover-popup span {
   display: none;
 }
-/* line 728, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 730, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .region-content .flippy .hover-popup:before {
   content: '\f2ca';
   font-family: "Ionicons";
 }
-/* line 736, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 738, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .popover {
   max-width: 600px;
   min-width: 200px;
 }
-/* line 740, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 742, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .popover .popover-title {
   background: black;
   color: white;
 }
-/* line 746, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 748, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #switch-theme .standart-theme {
   display: none;
 }
-/* line 751, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 753, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .contrast #switch-theme .standart-theme {
   display: list-item;
 }
-/* line 755, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 757, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .contrast #switch-theme .contrast-theme {
   display: none;
 }
 @media (max-width: 991px) {
-  /* line 761, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 763, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .content_bottom_wrap {
     padding-bottom: 40px;
   }
 }
-/* line 766, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 768, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-10 {
   clear: both;
   padding-left: 10px;
   margin-bottom: 20px;
 }
-/* line 771, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 773, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-10 .social-links {
   text-align: left;
 }
-/* line 774, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 776, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-10 .social-links a {
   font-size: 8px;
   font-size: 0.8rem;
@@ -10249,39 +10274,47 @@ p.rtejustify {
           transform: scale(1, 1);
   transition: all ease-in-out 0.1s;
 }
-/* line 788, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 790, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 #block-block-10 .social-links a:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   background: black;
 }
-/* line 796, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 798, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .btn.for-disabled {
   padding: 0 30px;
   margin-bottom: 20px;
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 801, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+  /* line 803, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
   .btn.for-disabled {
     margin-bottom: 0;
   }
 }
-/* line 805, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 807, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .btn.for-disabled i {
   font-size: 20px;
   font-size: 2rem;
   line-height: 1;
 }
-/* line 810, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 812, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .btn.for-disabled i,
 .btn.for-disabled span {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 815, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+/* line 817, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
 .btn.for-disabled span {
   white-space: normal;
+}
+/* line 822, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+#block-switchtheme-switch-form {
+  display: none;
+}
+/* line 827, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/parts.less */
+#block-views-news-block-4 .col {
+  margin-bottom: 40px;
 }
 /* line 2, http://nazk.gov.ua/sites/all/themes/nazk_ui/less/pages.less */
 .node-news-intro .logo {
@@ -10796,109 +10829,147 @@ p.rtejustify {
   opacity: 1;
 }
 /* line 8, ..\themes\nazk_uicontrast\less\contrast.less */
-#sideblocks .side-button a i {
+#sideblocks .side-button a i,
+#sideblocks .sblock {
   background-color: white;
+  color: black;
+  opacity: 1;
+  border: black 1px solid;
 }
-/* line 12, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 16, ..\themes\nazk_uicontrast\less\contrast.less */
 #navbar,
 #navbar .navbar-nav > .open > a + .dropdown-menu,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu,
-#navbar .navbar-nav > .open > a:focus + .dropdown-menu {
+#navbar .navbar-nav > .open > a:focus + .dropdown-menu,
+#navbar .navbar-nav > .open > a + .dropdown-menu a:hover,
+#navbar .navbar-nav > .open > a:hover + .dropdown-menu a:hover,
+#navbar .navbar-nav > .open > a:focus + .dropdown-menu a:hover,
+#block-block-2 .modal .modal-dialog .modal-content {
   background: black;
+  color: white;
 }
-/* line 17, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 25, ..\themes\nazk_uicontrast\less\contrast.less */
+#block-block-2 .modal .close {
+  color: white;
+  text-shadow: none;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+/* line 33, ..\themes\nazk_uicontrast\less\contrast.less */
 .front #frontquoute .field-name-body p,
 #navbar li a,
 #navbar .navbar-nav > .open > a + .dropdown-menu a,
 #navbar .navbar-nav > .open > a:hover + .dropdown-menu a,
-#navbar .navbar-nav > .open > a:focus + .dropdown-menu a {
+#navbar .navbar-nav > .open > a:focus + .dropdown-menu a,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
   color: white;
 }
-/* line 23, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 40, ..\themes\nazk_uicontrast\less\contrast.less */
 .form-control {
   border-color: black;
 }
-/* line 27, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 44, ..\themes\nazk_uicontrast\less\contrast.less */
 #block-views-news-block-1 .views-field-nothing .field_created,
 #block-views-news-block-3 .views-field-nothing .field_created,
 #block-views-news-block-4 .field_created {
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 33, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 50, ..\themes\nazk_uicontrast\less\contrast.less */
 #block-block-7 li a,
 #block-block-8 li a {
   font-size: 8px;
   font-size: 0.8rem;
 }
-/* line 37, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 54, ..\themes\nazk_uicontrast\less\contrast.less */
 .front #block-views-news-block-3 h2 {
   background: none;
 }
-/* line 41, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 58, ..\themes\nazk_uicontrast\less\contrast.less */
 .disabled-help {
   padding: 20px;
   border-bottom: black 2px solid;
   background: rgba(0, 0, 0, 0.8);
 }
+/* line 63, ..\themes\nazk_uicontrast\less\contrast.less */
+.disabled-help .font-help {
+  margin-bottom: 20px;
+}
+/* line 66, ..\themes\nazk_uicontrast\less\contrast.less */
+.disabled-help .font-help > div {
+  display: inline;
+  margin-right: 20px;
+}
+/* line 72, ..\themes\nazk_uicontrast\less\contrast.less */
+.disabled-help .font-help div btn {
+  background: white !important;
+}
+/* line 78, ..\themes\nazk_uicontrast\less\contrast.less */
+.disabled-help a.btn {
+  background: white;
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
-  /* line 46, ..\themes\nazk_uicontrast\less\contrast.less */
+  /* line 83, ..\themes\nazk_uicontrast\less\contrast.less */
   .disabled-help {
     clear: both;
     overflow: hidden;
   }
-  /* line 50, ..\themes\nazk_uicontrast\less\contrast.less */
+  /* line 87, ..\themes\nazk_uicontrast\less\contrast.less */
   .disabled-help .font-help {
     float: left;
+    margin-bottom: 0;
   }
-  /* line 53, ..\themes\nazk_uicontrast\less\contrast.less */
+  /* line 91, ..\themes\nazk_uicontrast\less\contrast.less */
   .disabled-help .font-help div {
     display: inline-block;
     float: left;
     margin-right: 20px;
   }
-  /* line 58, ..\themes\nazk_uicontrast\less\contrast.less */
-  .disabled-help .font-help div btn {
-    background: white !important;
-  }
-  /* line 64, ..\themes\nazk_uicontrast\less\contrast.less */
+  /* line 98, ..\themes\nazk_uicontrast\less\contrast.less */
   .disabled-help a.btn {
     float: right;
     max-width: 335px;
-    background: white;
   }
 }
-/* line 75, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 105, ..\themes\nazk_uicontrast\less\contrast.less */
+#sideblocks {
+  top: 365px;
+}
+/* line 111, ..\themes\nazk_uicontrast\less\contrast.less */
 ::-webkit-input-placeholder {
   color: #000;
 }
-/* line 76, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 112, ..\themes\nazk_uicontrast\less\contrast.less */
 ::-moz-placeholder {
   color: #000;
 }
 /* Firefox 19+ */
-/* line 77, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 113, ..\themes\nazk_uicontrast\less\contrast.less */
 :-moz-placeholder {
   color: #000;
 }
 /* Firefox 18- */
-/* line 78, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 114, ..\themes\nazk_uicontrast\less\contrast.less */
 :-ms-input-placeholder {
   color: #000;
 }
-/* line 79, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 115, ..\themes\nazk_uicontrast\less\contrast.less */
 input[placeholder] {
   text-overflow: ellipsis;
 }
-/* line 80, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 116, ..\themes\nazk_uicontrast\less\contrast.less */
 input::-moz-placeholder {
   text-overflow: ellipsis;
 }
-/* line 81, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 117, ..\themes\nazk_uicontrast\less\contrast.less */
 input:-moz-placeholder {
   text-overflow: ellipsis;
 }
-/* line 82, ..\themes\nazk_uicontrast\less\contrast.less */
+/* line 118, ..\themes\nazk_uicontrast\less\contrast.less */
 input:-ms-input-placeholder {
   text-overflow: ellipsis;
 }

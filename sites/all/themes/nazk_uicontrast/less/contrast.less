@@ -5,18 +5,35 @@
     opacity: 1;
 }
 
-#sideblocks .side-button a i {
+#sideblocks .side-button a i,
+#sideblocks .sblock {
     background-color: white;
+    color: black;
+    opacity: 1;
+    border: black 1px solid;
 }
 
 #navbar,
-#navbar .navbar-nav > .open > a + .dropdown-menu, #navbar .navbar-nav > .open > a:hover + .dropdown-menu, #navbar .navbar-nav > .open > a:focus + .dropdown-menu {
+#navbar .navbar-nav > .open > a + .dropdown-menu, #navbar .navbar-nav > .open > a:hover + .dropdown-menu, #navbar .navbar-nav > .open > a:focus + .dropdown-menu,
+#navbar .navbar-nav > .open > a + .dropdown-menu a:hover, #navbar .navbar-nav > .open > a:hover + .dropdown-menu a:hover, #navbar .navbar-nav > .open > a:focus + .dropdown-menu a:hover,
+#block-block-2 .modal .modal-dialog .modal-content {
     background: black;
+    color: white;
+}
+
+#block-block-2 .modal  {
+    .close {
+        color: white;
+        text-shadow: none;
+        opacity: 1;
+        .font-size(30);
+    }
 }
 
 .front #frontquoute .field-name-body p,
 #navbar li a,
-#navbar .navbar-nav > .open > a + .dropdown-menu a, #navbar .navbar-nav > .open > a:hover + .dropdown-menu a, #navbar .navbar-nav > .open > a:focus + .dropdown-menu a {
+#navbar .navbar-nav > .open > a + .dropdown-menu a, #navbar .navbar-nav > .open > a:hover + .dropdown-menu a, #navbar .navbar-nav > .open > a:focus + .dropdown-menu a,
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     color: white;
 }
 
@@ -43,32 +60,51 @@
     border-bottom: black 2px solid;
     background: rgba(0,0,0,0.80);
     
+    .font-help {
+        margin-bottom: 20px;
+        
+        > div {
+            display: inline; 
+            margin-right: 20px;
+        }
+        
+        div {
+            btn {
+                background: white !important;
+            }
+        }
+    }
+    
+    a.btn {
+            background: white;
+            margin-bottom: 0;
+    }
+    
     @media (min-width: 768px) {
         clear: both;
         overflow: hidden;
         
         .font-help {
             float: left;
+            margin-bottom: 0;
             
             div {
                 display: inline-block;
                 float: left;
                 margin-right: 20px;
-                
-                btn {
-                    background: white !important;
-                }
             }
         }
         
         a.btn {
             float: right;
             max-width: 335px;
-            background: white;
         }
     }
 }
 
+#sideblocks {
+    top: 365px;
+}
 
 
 

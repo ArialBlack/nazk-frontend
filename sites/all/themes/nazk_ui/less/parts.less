@@ -118,8 +118,10 @@
         margin-bottom: 40px;
     }
     
-    .col:last-child {
-        padding-left: 40px;
+    @media (min-width: 1200px) {
+        .col:last-child {
+            padding-left: 40px;
+        }
     }
     
     .col {
@@ -814,5 +816,15 @@
             
     span {
         white-space: normal;
+    }
+}
+
+#block-switchtheme-switch-form {
+    display: none;
+}
+
+#block-views-news-block-4 {
+    .col {
+        margin-bottom: 40px;
     }
 }
